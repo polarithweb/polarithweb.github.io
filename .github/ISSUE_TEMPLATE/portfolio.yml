@@ -1,0 +1,33 @@
+name: Add Portfolio Project
+description: Add a new project to the portfolio section
+title: "[Portfolio]: "
+labels: ["portfolio"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Project Title
+      description: Name of the project
+      placeholder: e.g., PriAxom AirEye
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Project Link
+      description: URL to the project or GitHub repo
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: Features
+      description: List 3-4 features or highlights, one per line.
+      placeholder: |
+        Advanced Eye-Tracking Algorithm
+        Touchless UI Navigation
+        Seamless Integration
+    validations:
+      required: true
+      
