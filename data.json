@@ -1,0 +1,17 @@
+{
+  "pricing": [
+    {
+      "title": "Premium Production Grade Website",
+      "price": "3499",
+      "tag": "Best Package",
+      "features": ["AI Chatbot & Free management", "SEO & Google Indexing", "Production level Structure"]
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Example Project",
+      "link": "https://example.com",
+      "features": ["Feature 1", "Feature 2", "Feature 3"]
+    }
+  ]
+}
