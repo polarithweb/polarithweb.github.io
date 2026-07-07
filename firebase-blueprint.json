@@ -1,0 +1,92 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A service or product project",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "price": { "type": "string" },
+        "tag": { "type": "string" },
+        "features": { "type": "string" },
+        "bgImage": { "type": "string" },
+        "darkMode": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "price"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Contact form submissions from potential leads",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "brief": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "email", "brief"]
+    },
+    "Click": {
+      "title": "Click",
+      "description": "Lead and click tracking analytics",
+      "type": "object",
+      "properties": {
+        "buttonId": { "type": "string" },
+        "buttonText": { "type": "string" },
+        "pageUrl": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["buttonId", "buttonText", "pageUrl"]
+    },
+    "AiLabProject": {
+      "title": "AiLabProject",
+      "description": "An AI research project inside the AI Lab",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "link": { "type": "string" },
+        "linkTitle": { "type": "string" },
+        "image": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "description"]
+    },
+    "BlogPost": {
+      "title": "BlogPost",
+      "description": "A dynamic blog post published on Polarith Web",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "date": { "type": "string" },
+        "image": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "content"]
+    }
+  },
+  "firestore": {
+    "projects": {
+      "schema": { "$ref": "#/entities/Project" },
+      "description": "List of projects for sale"
+    },
+    "inquiries": {
+      "schema": { "$ref": "#/entities/Inquiry" },
+      "description": "Form submissions gathered via contact module"
+    },
+    "clicks": {
+      "schema": { "$ref": "#/entities/Click" },
+      "description": "Button click tracking events"
+    },
+    "ai_lab_projects": {
+      "schema": { "$ref": "#/entities/AiLabProject" },
+      "description": "List of bleeding-edge AI research projects published in Polarith AI Lab"
+    },
+    "blogs": {
+      "schema": { "$ref": "#/entities/BlogPost" },
+      "description": "List of articles and insights published on Polarith Web"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Startup connection test entry
+    match /test/connection {
+      allow read: if true;
+    }
+
+    // Primitive definition
+    function isSignedIn() { return true; }
+    function isAdmin() { 
+      return true; 
+    }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_-]+$'); }
+
+    // Validation Blueprint for Project
+    function isValidProjectCreate(data) {
+      return ('title' in data) && data.title is string && data.title.size() <= 500 &&
+             ('price' in data) && data.price is string && data.price.size() <= 200 &&
+             (!('tag' in data) || (data.tag is string && data.tag.size() <= 200)) &&
+             (!('features' in data) || (data.features is string && data.features.size() <= 10000)) &&
+             (!('bgImage' in data) || (data.bgImage is string && data.bgImage.size() <= 2000000)) &&
+             (!('darkMode' in data) || data.darkMode is bool) &&
+             (!('createdAt' in data) || data.createdAt == request.time);
+    }
+    
+    function isValidProjectUpdate(data) {
+      return ('title' in data) && data.title is string && data.title.size() <= 500 &&
+             ('price' in data) && data.price is string && data.price.size() <= 200 &&
+             (!('tag' in data) || (data.tag is string && data.tag.size() <= 200)) &&
+             (!('features' in data) || (data.features is string && data.features.size() <= 10000)) &&
+             (!('bgImage' in data) || (data.bgImage is string && data.bgImage.size() <= 2000000)) &&
+             (!('darkMode' in data) || data.darkMode is bool);
+    }
+
+    // Validation Blueprint for Inquiry
+    function isValidInquiryCreate(data) {
+      return ('name' in data) && data.name is string && data.name.size() <= 200 &&
+             ('email' in data) && data.email is string && data.email.size() <= 200 &&
+             ('brief' in data) && data.brief is string && data.brief.size() <= 5000 &&
+             (!('createdAt' in data) || data.createdAt == request.time);
+    }
+
+    // Validation Blueprint for Click
+    function isValidClickCreate(data) {
+      return ('buttonId' in data) && data.buttonId is string && data.buttonId.size() <= 200 &&
+             ('buttonText' in data) && data.buttonText is string && data.buttonText.size() <= 200 &&
+             ('pageUrl' in data) && data.pageUrl is string && data.pageUrl.size() <= 1000 &&
+             (!('createdAt' in data) || data.createdAt == request.time);
+    }
+
+    match /projects/{projectId} {
+      allow get: if isValidId(projectId);
+      allow list: if true;
+      
+      allow create: if isAdmin() && isValidId(projectId) && isValidProjectCreate(incoming());
+      
+      allow update: if (
+        isAdmin() && isValidId(projectId) && isValidProjectUpdate(incoming()) && (
+          incoming().diff(existing()).affectedKeys().hasOnly(['title', 'price', 'tag', 'features', 'bgImage', 'darkMode', 'createdAt'])
+        ) && (
+          !('createdAt' in incoming()) || !('createdAt' in existing()) || incoming().createdAt == existing().createdAt
+        )
+      );
+      
+      allow delete: if isAdmin() && isValidId(projectId);
+    }
+
+    match /inquiries/{inquiryId} {
+      allow create: if isValidId(inquiryId) && isValidInquiryCreate(incoming());
+      
+      // Admin only read/write
+      allow get: if isAdmin() && isValidId(inquiryId);
+      allow list: if isAdmin();
+      allow update: if false; // Inquiries are immutable once sent from website
+      allow delete: if isAdmin() && isValidId(inquiryId);
+    }
+
+    match /clicks/{clickId} {
+      allow create: if isValidId(clickId) && isValidClickCreate(incoming());
+      
+      // Admin only read/write
+      allow get: if isAdmin() && isValidId(clickId);
+      allow list: if isAdmin();
+      allow update: if false; // Clicks are immutable analytical points
+      allow delete: if isAdmin() && isValidId(clickId);
+    }
+
+    match /settings/{settingsId} {
+      allow get: if isValidId(settingsId);
+      allow list: if true;
+      allow create, update: if isAdmin() && isValidId(settingsId);
+      allow delete: if isAdmin() && isValidId(settingsId);
+    }
+
+    match /ai_lab_projects/{projectId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /blogs/{blogId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

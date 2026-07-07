@@ -1,0 +1,10 @@
+/* TEAM */
+Founder & CEO: Priyam Kesh
+Role: Chief Executive Officer, Founder, Lead Developer
+From: India
+
+/* SITE */
+Last update: 2026/07/02
+Language: English
+Doctype: HTML5
+IDE: Google AI Studio

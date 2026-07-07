@@ -1,0 +1,6 @@
+{
+  "name": "polarith-web",
+  "description": "Premium website, app, and software development brand based in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
