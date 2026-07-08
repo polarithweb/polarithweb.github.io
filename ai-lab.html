@@ -84,6 +84,12 @@
       {
         "@type": "ListItem",
         "position": 2,
+        "name": "Services",
+        "item": "https://polarithweb.github.io/#services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
         "name": "AI Lab",
         "item": "https://polarithweb.github.io/ai-lab.html"
       }
@@ -128,6 +134,48 @@
       ]
     }
   ]
+  </script>
+
+  <!-- FAQPage Schema for Dominating Search Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is the founder of Polarith AI and Polarith Softwares?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Polarith AI Lab and Polarith Softwares were founded and are led by Priyam Kesh, India's elite systems architect, software developer, and student entrepreneur based in Durgapur, West Bengal. Under his technical leadership, Polarith Web designs and deploys robust, high-performance, hand-coded applications, custom neural architectures, and enterprise-grade mobile apps with a 100% focus on zero-trust security and data privacy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What custom services do Priyam Kesh and Polarith Softwares offer in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Polarith Softwares, spearheaded by Priyam Kesh, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android & iOS mobile applications, high-performance game engineering (using Unity & Unreal Engines), and bespoke artificial intelligence integrations through the Polarith AI Lab. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Polarith AI different from generic AI companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At Polarith AI, we reject typical off-the-shelf APIs and generic SaaS builders. Under the technical guidance of Priyam Kesh, our team specializes in building mathematically precise, lightweight machine learning algorithms and neural pipelines natively from scratch. This guarantees absolute data isolation, extreme low-latency processing, zero-trust backend infrastructure, and perfect Lighthouse/Core Web Vitals scores for our business clients in India and worldwide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I hire Polarith Web or consult with Priyam Kesh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can consult with Priyam Kesh and the elite engineering team at Polarith Web (also operating as Polarith Softwares) by exploring our official website at polarithweb.github.io. We welcome inquiries regarding enterprise custom software architectures, native mobile apps, and custom machine learning pipelines built to secure cloud databases."
+        }
+      }
+    ]
+  }
   </script>
 
   <!-- Fonts -->
@@ -468,6 +516,72 @@
       text-decoration: underline;
       color: #f0f9ff;
     }
+
+    /* Elegant FAQ Accordion Section */
+    .faq-container {
+      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .faq-item {
+      background: rgba(15, 23, 42, 0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 1.25rem 1.75rem;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background: rgba(15, 23, 42, 0.25);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 10px 25px rgba(14, 165, 233, 0.15);
+    }
+
+    .faq-question {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      gap: 1rem;
+      outline: none;
+    }
+
+    /* Hide default details marker */
+    .faq-question::-webkit-details-marker {
+      display: none;
+    }
+    .faq-question {
+      list-style: none;
+    }
+
+    .faq-question::after {
+      content: "✦";
+      font-size: 1.1rem;
+      color: #bae6fd;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item[open] .faq-question::after {
+      transform: rotate(45deg);
+      color: #ffffff;
+    }
+
+    .faq-answer {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: #f0f9ff;
+      margin-top: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 0.85rem;
+    }
   </style>
 
 <script>// Fallback UI functions for immediate interactivity before modules load
@@ -603,6 +717,44 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
         <p style="font-style: italic; font-size: 0.95rem; color: #bae6fd; text-align: center;">
           ✦ Handcrafted by Priyam Kesh with a 100% focus on data security, zero-trust backend authorization, and seamless cloud database syncing.
         </p>
+      </div>
+
+      <!-- FAQ Accordion section -->
+      <div class="faq-container">
+        <h3 style="font-family: var(--font-main); font-size: 1.5rem; font-weight: 800; color: #ffffff; text-align: center; margin-top: 2rem; margin-bottom: 0.5rem; letter-spacing: -0.01em;">
+          Frequently Asked Questions (FAQ)
+        </h3>
+        <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1.5rem;">
+          Learn more about Polarith Softwares, Polarith AI, and our lead engineer Priyam Kesh.
+        </p>
+
+        <details class="faq-item" open>
+          <summary class="faq-question">Who is the founder of Polarith AI and Polarith Softwares?</summary>
+          <div class="faq-answer">
+            Polarith AI Lab and Polarith Softwares were founded and are led by <strong>Priyam Kesh</strong>, India's elite systems architect, software developer, and student entrepreneur based in Durgapur, West Bengal. Under his technical leadership, <strong>Polarith Web</strong> designs and deploys robust, high-performance, hand-coded applications, custom neural architectures, and enterprise-grade mobile apps with a 100% focus on zero-trust security and data privacy.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What custom services do Priyam Kesh and Polarith Softwares offer in India?</summary>
+          <div class="faq-answer">
+            <strong>Polarith Softwares</strong>, spearheaded by <strong>Priyam Kesh</strong>, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android & iOS mobile applications, high-performance game engineering (using Unity & Unreal Engines), and bespoke artificial intelligence integrations through the <strong>Polarith AI Lab</strong>. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">What makes Polarith AI different from generic AI companies?</summary>
+          <div class="faq-answer">
+            At <strong>Polarith AI</strong>, we reject typical off-the-shelf APIs and generic SaaS builders. Under the technical guidance of <strong>Priyam Kesh</strong>, our team specializes in building mathematically precise, lightweight machine learning algorithms and neural pipelines natively from scratch. This guarantees absolute data isolation, extreme low-latency processing, zero-trust backend infrastructure, and perfect Lighthouse/Core Web Vitals scores for our business clients in India and worldwide.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">How can I hire Polarith Web or consult with Priyam Kesh?</summary>
+          <div class="faq-answer">
+            You can consult with <strong>Priyam Kesh</strong> and the elite engineering team at <strong>Polarith Web</strong> (also operating as <strong>Polarith Softwares</strong>) by exploring our official website at <strong>polarithweb.github.io</strong>. We welcome inquiries regarding enterprise custom software architectures, native mobile apps, and custom machine learning pipelines built to secure cloud databases.
+          </div>
+        </details>
       </div>
     </div>
   </section>
