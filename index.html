@@ -381,7 +381,14 @@ window.toggleFaqFallback = function(element) {
 };
 if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
 </head>
-<body>
+<body class="is-loading">
+
+  <!-- Tilted Fullscreen Page-Load Intro Transition Overlay -->
+  <div id="intro-transition-container" class="intro-transition-container">
+    <div class="intro-transition-stripe stripe-1"></div>
+    <div class="intro-transition-stripe stripe-2"></div>
+    <div class="intro-transition-stripe stripe-3"></div>
+  </div>
 
   <!-- Flowing Announcement Ribbon -->
   <div class="announcement-ribbon">
@@ -404,7 +411,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
   </div>
 
   <!-- Navigation -->
-  <header>
+  <header class="reveal-anim delay-1">
     <div class="container nav-wrapper">
       <a href="#" class="brand-link" onclick="window.scrollTo(0,0)" style="text-decoration: none; color: inherit;">
         <img src="./logo.png" alt="Polarith Web - India's Best Custom Website Builder &amp; Software Company" class="brand-logo" width="48" height="48" decoding="async" onerror="this.src='./favicon.png'; this.onerror=null;" />
@@ -444,34 +451,32 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
     <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
-        <h1 class="hero-title">
+        <h1 class="hero-title reveal-anim delay-2">
           India's Best Website Builder, App Developer &amp; Software Company
         </h1>
-        <p class="hero-desc">
+        <p class="hero-desc reveal-anim delay-3">
           Hey, we're Polarith Web. Recognized as the best software company, best app developer, best game developer, and best website builder in India, we hand-code clean, ultra-responsive digital products entirely from scratch. Zero rigid templates—just pure performance to grow your business.
         </p>
         <div class="hero-buttons" style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="#" onclick="startProjectWhatsApp(); return false;" class="btn-primary">Start a Project</a>
-          <a href="#services" class="btn-secondary">See What We Do</a>
-          <a href="./game-development.html" class="btn-game-dev" style="background: #000000; color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light);">
+          <a href="#" onclick="startProjectWhatsApp(); return false;" class="btn-primary reveal-drop drop-delay-1">Start a Project</a>
+          <a href="#services" class="btn-secondary reveal-drop drop-delay-2">See What We Do</a>
+          <a href="./game-development.html" class="btn-game-dev reveal-drop drop-delay-3" style="background: #000000; color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="transform: translateY(0.5px);"><rect x="2" y="6" width="20" height="12" rx="3"></rect><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01M18 11h.01M15 13h.01"></path></svg>
             Game Development
           </a>
-          <a href="./ai-lab.html" class="btn-ai-lab" style="background: linear-gradient(135deg, #0284c7, #0ea5e9); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light);">
+          <a href="./ai-lab.html" class="btn-ai-lab reveal-drop drop-delay-4" style="background: linear-gradient(135deg, #0284c7, #0ea5e9); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(0.5px);"><path d="M10 2v7.5M14 2v7.5M8.5 13h7M16 21H8a2 2 0 0 1-1.82-2.82L10 9.5h4l3.82 8.68A2 2 0 0 1 16 21Z"/></svg>
             Polarith AI Lab
           </a>
-          <a href="./blogs.html" class="btn-blogs" style="background: linear-gradient(135deg, #ea580c, #f97316); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light);">
+          <a href="./blogs.html" class="btn-blogs reveal-drop drop-delay-5" style="background: linear-gradient(135deg, #ea580c, #f97316); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(0.5px);"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
             Blogs
           </a>
         </div>
       </div>
       
-      <div class="hero-image-box" style="display: flex; flex-direction: column; padding: 1.5rem; background: var(--bg-surface); border: 2px solid var(--border-dark); box-shadow: 8px 8px 0px var(--border-light); margin-top: 0;">
-        <img src="./hero.svg" alt="Polarith Web - India's Best Hand-Coded Web &amp; App Development Studio" class="hero-svg-img" id="hero-svg-img" width="600" height="400" decoding="async" fetchpriority="high" style="display: block; width: 100%; height: auto; outline: none; border-bottom: 2px solid var(--border-dark); margin-bottom: 1.5rem;" onerror="if(!this.src.includes('/public/')){ this.src = './public/hero.svg'; } else { this.style.display='none'; }" />
-
-        <div class="approach-text-box">
+      <div style="display: flex; flex-direction: column;" class="reveal-anim delay-5">
+        <div class="approach-text-box" style="padding: 0 0.5rem;">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Our Approach</h3>
           <p style="margin-bottom: 0.75rem; color: var(--text-muted); font-size: 0.95rem;">
             We believe good software doesn't need to be overly complicated. We keep things light, fast, and easy to maintain.
@@ -963,42 +968,9 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
                 </div>
               </div>
 
-              <!-- Favicon Customization -->
-              <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">2. Website Favicon (favicon.png)</span>
-                <input type="file" id="img-favicon-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-favicon-url" class="form-control" placeholder="Or paste favicon URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-favicon-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-favicon-img" src="./favicon.png" style="height: 36px; width: 36px; object-fit: contain; background: #0f172a; padding: 4px; border-radius: 4px;" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="favicon" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
-              <!-- Hero Customization -->
-              <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">3. Hero Graphic (hero.svg)</span>
-                <input type="file" id="img-hero-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-hero-url" class="form-control" placeholder="Or paste hero graphic URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-hero-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-hero-img" src="./hero.svg" style="height: 36px; max-width: 120px; object-fit: contain; border: 1px solid var(--border-light);" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="hero" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
-              <!-- CEO Profile Customization -->
-              <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">4. CEO Portrait (me.png)</span>
-                <input type="file" id="img-ceo-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-ceo-url" class="form-control" placeholder="Or paste CEO portrait URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-ceo-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-ceo-img" src="./me.png" style="height: 36px; width: 36px; object-fit: cover; border-radius: 50%; border: 1px solid var(--border-light);" onerror="this.src='https://placehold.co/100x100/0f172a/ffffff?text=CEO';" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="ceo" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
               <!-- RPG Image -->
               <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">5. RPG Game Cover (img1.png)</span>
+                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">2. RPG Game Cover (img1.png)</span>
                 <input type="file" id="img-img1-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
                 <input type="text" id="img-img1-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
                 <div id="preview-img1-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
@@ -1009,7 +981,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
 
               <!-- Action Image -->
               <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">6. Action Game Cover (img2.png)</span>
+                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">3. Action Game Cover (img2.png)</span>
                 <input type="file" id="img-img2-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
                 <input type="text" id="img-img2-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
                 <div id="preview-img2-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
@@ -1020,7 +992,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
 
               <!-- Casual Image -->
               <div style="background: #f8fafc; padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">7. Casual Game Cover (img3.png)</span>
+                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">4. Casual Game Cover (img3.png)</span>
                 <input type="file" id="img-img3-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
                 <input type="text" id="img-img3-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
                 <div id="preview-img3-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
@@ -1244,6 +1216,42 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
       </div>
     </div>
   </div>
+
+  <!-- Page Intro Sweep Animation Controller Script -->
+  <script>
+    (function() {
+      // Ensure the page starts locked if browser executes too quickly
+      document.body.classList.add("is-loading");
+
+      function triggerTransition() {
+        const transitionContainer = document.getElementById("intro-transition-container");
+        if (transitionContainer) {
+          // Trigger the CSS sliding sweep
+          transitionContainer.classList.add("animate-out");
+        }
+
+        // Unblock scrolling and run content entrance stagger transitions
+        document.body.classList.remove("is-loading");
+        document.body.classList.add("is-revealed");
+
+        // Clean up the transition container from the DOM entirely to free system resources
+        setTimeout(function() {
+          if (transitionContainer) {
+            transitionContainer.remove();
+          }
+        }, 1500);
+      }
+
+      // Trigger transition immediately on DOMContentLoaded or after a tiny safety margin to look beautiful
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(triggerTransition, 150);
+        });
+      } else {
+        setTimeout(triggerTransition, 150);
+      }
+    })();
+  </script>
 
   <script type="module" src="./src/site-assets.js"></script>
   <script type="module" src="./script.js"></script>

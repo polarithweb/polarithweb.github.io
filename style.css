@@ -20,7 +20,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border-radius: 0 !important; /* Strict 90° rule */
+  border-radius: 0; /* Default to flat */
 }
 
 html {
@@ -40,21 +40,7 @@ body {
   overflow-x: clip;
   max-width: 100vw;
   width: 100%;
-  
-  /* Textured Background: Light clean dot grid */
-  background-image: radial-gradient(#94a3b8 1.1px, transparent 1.1px);
-  background-size: 24px 24px;
   position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  pointer-events: none;
-  z-index: 999;
-  opacity: 0.25;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 /* --- TYPOGRAPHY --- */
@@ -147,15 +133,9 @@ header {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  border: 2px solid var(--border-dark);
   background: var(--bg-surface);
   object-fit: contain;
   padding: 2px;
-  transition: border-color var(--transition);
-}
-
-.brand-link:hover .brand-logo {
-  border-color: var(--brand-primary);
 }
 
 .brand-text {
@@ -180,6 +160,7 @@ header {
 .menu-btn {
   background: transparent;
   border: 2px solid var(--border-dark);
+  border-radius: 4px;
   width: 44px;
   height: 44px;
   display: flex;
@@ -201,6 +182,7 @@ header {
   background-color: transparent;
   color: var(--text-dark) !important;
   border: 2px solid var(--border-dark);
+  border-radius: 4px;
   height: 44px;
   padding: 0 16px;
   display: flex;
@@ -299,6 +281,7 @@ header {
   right: 12px;
   background: transparent;
   border: 2px solid var(--border-dark);
+  border-radius: 4px;
   width: 36px;
   height: 36px;
   font-size: 1.5rem;
@@ -353,6 +336,7 @@ header {
   background: var(--brand-primary);
   color: white;
   border: 2px solid var(--brand-primary);
+  border-radius: 4px;
   padding: 14px 24px;
   font-weight: 600;
   font-size: 1rem;
@@ -376,6 +360,7 @@ header {
   background: transparent;
   color: var(--text-dark);
   border: 2px solid var(--border-dark);
+  border-radius: 4px;
   padding: 14px 24px;
   font-weight: 600;
   font-size: 1rem;
@@ -1107,4 +1092,144 @@ footer {
     max-width: 360px;
   }
 }
+
+/* --- PREMIUM TILTED SWEEP PAGE INTRO ANIMATION & ENTRANCE --- */
+body.is-loading {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+.intro-transition-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.intro-transition-stripe {
+  position: absolute;
+  top: -20vh;
+  left: -40vw;
+  width: 180vw;
+  height: 140vh;
+  transform: skewX(-15deg) translateX(0%);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.intro-transition-stripe.stripe-1 {
+  background-color: #0f172a; /* Deep Slate / Dark Theme Color */
+  z-index: 3;
+}
+
+.intro-transition-stripe.stripe-2 {
+  background-color: #2563eb; /* Vibrant Brand Blue */
+  z-index: 2;
+}
+
+.intro-transition-stripe.stripe-3 {
+  background-color: #f1f5f9; /* Soft Slate Gray Background Accent */
+  z-index: 1;
+}
+
+/* When animating out, the stripes slide out of view to the right with precise timing offsets */
+.intro-transition-container.animate-out .stripe-1 {
+  transform: skewX(-15deg) translateX(125%);
+}
+
+.intro-transition-container.animate-out .stripe-2 {
+  transform: skewX(-15deg) translateX(125%);
+  transition-delay: 0.15s;
+}
+
+.intro-transition-container.animate-out .stripe-3 {
+  transform: skewX(-15deg) translateX(125%);
+  transition-delay: 0.3s;
+}
+
+/* Staggered entering animations for main page components */
+.reveal-anim {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.is-revealed .reveal-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.is-revealed .delay-1 {
+  transition-delay: 0.35s;
+}
+
+body.is-revealed .delay-2 {
+  transition-delay: 0.45s;
+}
+
+body.is-revealed .delay-3 {
+  transition-delay: 0.55s;
+}
+
+body.is-revealed .delay-4 {
+  transition-delay: 0.65s;
+}
+
+body.is-revealed .delay-5 {
+  transition-delay: 0.75s;
+}
+
+/* --- HERO BUTTONS PHYSICS DROP-IN & BOUNCE ANIMATION --- */
+@keyframes drop-in-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(15px) scale(1.03);
+  }
+  75% {
+    transform: translateY(-5px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.reveal-drop {
+  opacity: 0;
+  transform: translateY(-80px);
+  will-change: transform, opacity;
+}
+
+body.is-revealed .reveal-drop {
+  animation: drop-in-bounce 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Staggered drops starting right as the page starts revealing */
+body.is-revealed .reveal-drop.drop-delay-1 {
+  animation-delay: 0.05s;
+}
+
+body.is-revealed .reveal-drop.drop-delay-2 {
+  animation-delay: 0.12s;
+}
+
+body.is-revealed .reveal-drop.drop-delay-3 {
+  animation-delay: 0.19s;
+}
+
+body.is-revealed .reveal-drop.drop-delay-4 {
+  animation-delay: 0.26s;
+}
+
+body.is-revealed .reveal-drop.drop-delay-5 {
+  animation-delay: 0.33s;
+}
+
 

@@ -19,17 +19,7 @@ export function applyDynamicImages(images) {
   }
 
   // 2. Favicon (favicon.png)
-  if (images.favicon && images.favicon.trim() !== '') {
-    const favicons = document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]');
-    favicons.forEach(fav => {
-      fav.href = images.favicon;
-    });
-  } else {
-    const favicons = document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]');
-    favicons.forEach(fav => {
-      fav.href = './favicon.png';
-    });
-  }
+  // Removed dynamic override as search engines require a fixed favicon.png in code/file structure.
 
   // 3. Hero Illustration (hero.svg)
   if (images.hero && images.hero.trim() !== '') {
@@ -46,18 +36,7 @@ export function applyDynamicImages(images) {
   }
 
   // 4. CEO Portrait (me.png)
-  if (images.ceo && images.ceo.trim() !== '') {
-    const ceoImg = document.querySelector('.ceo-img') || document.querySelector('img[src="./me.png"]');
-    if (ceoImg) {
-      ceoImg.src = images.ceo;
-      ceoImg.removeAttribute('onerror');
-    }
-  } else {
-    const ceoImg = document.querySelector('.ceo-img');
-    if (ceoImg) {
-      ceoImg.src = './me.png';
-    }
-  }
+  // Removed dynamic override - loaded statically from ./me.png directly.
 
   // 5. RPG Game Screenshot (img1.png)
   document.querySelectorAll('img[data-game-screenshot="img1"], img[src="./img1.png"], img[alt="RPG & Adventure"], #preview-img1-img').forEach(img1 => {
