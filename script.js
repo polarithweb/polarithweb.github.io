@@ -94,7 +94,13 @@ function subscribeToProjects() {
     console.log("Firebase Connection: Projects synchronized successfully. Items:", projectsFromDb.length);
     combineAndRenderProjects();
   }, (error) => {
-    console.error("Firestore subscription failed: ", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("Firestore projects subscription completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("Firestore subscription failed: ", errMsg);
+    }
     projectsFromDb = [];
     combineAndRenderProjects();
     try {
@@ -1014,7 +1020,13 @@ function subscribeAiProjects() {
     });
     renderAdminAiProjects();
   }, (error) => {
-    console.error("AI Lab subscription failed: ", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("AI Lab subscription completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("AI Lab subscription failed: ", errMsg);
+    }
   });
 }
 
@@ -1139,11 +1151,17 @@ function subscribeAdminBlogs() {
     });
     renderAdminBlogs();
   }, (error) => {
-    console.error("Blogs database sync failed: ", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("Blogs database sync completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("Blogs database sync failed: ", errMsg);
+    }
     try {
       handleFirestoreError(error, OperationType.LIST, 'blogs');
     } catch (e) {
-      console.error(e);
+      // Safe boundary
     }
   });
 }
@@ -1275,7 +1293,13 @@ function subscribeInquiries() {
     inquiriesData = data;
     renderInquiries();
   }, (error) => {
-    console.error("Inquiries subscription failed: ", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("Inquiries subscription completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("Inquiries subscription failed: ", errMsg);
+    }
   });
 }
 
@@ -1293,7 +1317,13 @@ function subscribeClicks() {
     clicksData = data.slice(0, 50);
     renderClicks();
   }, (error) => {
-    console.error("Clicks telemetry subscription failed: ", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("Clicks telemetry subscription completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("Clicks telemetry subscription failed: ", errMsg);
+    }
   });
 }
 

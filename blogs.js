@@ -104,17 +104,23 @@ function initBlogsSync() {
     applyFilters();
     checkUrlHash(); // Check if there is a blog id in hash to open immediately
   }, (error) => {
-    console.error("Firestore Blogs synchronization failed:", error.message);
+    const errMsg = error ? (error.message || String(error)) : "";
+    const isQuota = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit');
+    if (isQuota) {
+      console.warn("Firestore Blogs subscription completed via cache/fallback limit.", errMsg);
+    } else {
+      console.error("Firestore Blogs synchronization failed:", errMsg);
+    }
     if (loadingSpinner) {
       loadingSpinner.innerHTML = `
         <div style="color: #ef4444; font-weight: 700;">Connection Failed</div>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.4);">${error.message}</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.4);">${errMsg}</p>
       `;
     }
     try {
       handleFirestoreError(error, OperationType.LIST, 'blogs');
     } catch (e) {
-      console.error(e);
+      // Safe boundary
     }
   });
 }

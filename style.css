@@ -1117,7 +1117,7 @@ body.is-loading {
   width: 180vw;
   height: 140vh;
   transform: skewX(-15deg) translateX(0%);
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  will-change: transform;
 }
 
 .intro-transition-stripe.stripe-1 {
@@ -1135,19 +1135,27 @@ body.is-loading {
   z-index: 1;
 }
 
-/* When animating out, the stripes slide out of view to the right with precise timing offsets */
+/* Precise slide-out keyframes animation to guarantee rendering */
+@keyframes sweep-out {
+  0% {
+    transform: skewX(-15deg) translateX(0%);
+  }
+  100% {
+    transform: skewX(-15deg) translateX(125%);
+  }
+}
+
+/* When animating out, the stripes slide out of view to the right using the keyframes animation */
 .intro-transition-container.animate-out .stripe-1 {
-  transform: skewX(-15deg) translateX(125%);
+  animation: sweep-out 1s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 
 .intro-transition-container.animate-out .stripe-2 {
-  transform: skewX(-15deg) translateX(125%);
-  transition-delay: 0.15s;
+  animation: sweep-out 1s cubic-bezier(0.86, 0, 0.07, 1) 0.15s forwards;
 }
 
 .intro-transition-container.animate-out .stripe-3 {
-  transform: skewX(-15deg) translateX(125%);
-  transition-delay: 0.3s;
+  animation: sweep-out 1s cubic-bezier(0.86, 0, 0.07, 1) 0.3s forwards;
 }
 
 /* Staggered entering animations for main page components */
@@ -1211,25 +1219,25 @@ body.is-revealed .reveal-drop {
   animation: drop-in-bounce 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-/* Staggered drops starting right as the page starts revealing */
+/* Staggered drops starting 0.5s after the intro swipe animation ends (1.3s swipe duration + 0.5s delay = 1.8s) */
 body.is-revealed .reveal-drop.drop-delay-1 {
-  animation-delay: 0.05s;
+  animation-delay: 1.80s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-2 {
-  animation-delay: 0.12s;
+  animation-delay: 1.87s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-3 {
-  animation-delay: 0.19s;
+  animation-delay: 1.94s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-4 {
-  animation-delay: 0.26s;
+  animation-delay: 2.01s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-5 {
-  animation-delay: 0.33s;
+  animation-delay: 2.08s;
 }
 
 

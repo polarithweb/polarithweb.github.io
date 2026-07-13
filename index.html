@@ -1242,14 +1242,21 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
         }, 1500);
       }
 
-      // Trigger transition immediately on DOMContentLoaded or after a tiny safety margin to look beautiful
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", function() {
-          setTimeout(triggerTransition, 150);
-        });
+      // Trigger transition when the window and stylesheet are fully loaded and ready
+      if (document.readyState === "complete") {
+        setTimeout(triggerTransition, 100);
       } else {
-        setTimeout(triggerTransition, 150);
+        window.addEventListener("load", function() {
+          setTimeout(triggerTransition, 100);
+        });
       }
+
+      // Safety fallback: if window load is delayed, trigger anyway after 800ms
+      setTimeout(function() {
+        if (!document.body.classList.contains("is-revealed")) {
+          triggerTransition();
+        }
+      }, 800);
     })();
   </script>
 

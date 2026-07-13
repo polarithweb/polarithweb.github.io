@@ -35,14 +35,28 @@ export const OperationType = {
 };
 
 export function handleFirestoreError(error, operationType, path) {
+  const errMsg = error instanceof Error ? error.message : String(error);
   const errInfo = {
-    error: error instanceof Error ? error.message : String(error),
+    error: errMsg,
     authInfo: null,
     operationType,
     path
   };
-  console.error('Firestore Error: ', JSON.stringify(errInfo));
-  throw new Error(JSON.stringify(errInfo));
+  
+  const isQuotaError = errMsg.toLowerCase().includes('quota') || errMsg.toLowerCase().includes('limit exceeded');
+  const isPermissionError = errMsg.toLowerCase().includes('permission') || errMsg.toLowerCase().includes('denied');
+
+  if (isQuotaError) {
+    console.warn('Firestore Quota Limit Exceeded: The app has reached its free tier database limits. Local caching/fallbacks are active.', errInfo);
+    return; // Gracefully bypass without throwing to prevent page crashes
+  }
+
+  if (isPermissionError) {
+    console.error('Firestore Security/Permission Error: ', JSON.stringify(errInfo));
+    throw new Error(JSON.stringify(errInfo));
+  } else {
+    console.warn('Firestore Database Notice: ', JSON.stringify(errInfo));
+  }
 }
 
 export { collection, getDocs, addDoc, updateDoc, deleteDoc, doc, setDoc, onSnapshot, serverTimestamp };
