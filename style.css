@@ -2,9 +2,9 @@
 
 /* --- LIGHT THEME & BRAND VARIABLES --- */
 :root {
-  --bg-main: #f8fafc;        /* Light clean background */
-  --bg-surface: #ffffff;     /* Pure white for cards */
-  --bg-alt: #f1f5f9;         /* Slightly darker for alternating sections */
+  --bg-main: #f7fef6;        /* Light clean background */
+  --bg-surface: #f7fef6;     /* Light green-white for cards */
+  --bg-alt: #edf6ec;         /* Slightly darker for alternating sections */
   --text-dark: #0f172a;      /* Almost black for high contrast */
   --text-muted: #475569;     /* Gray for secondary text */
   --border-light: #cbd5e1;
@@ -108,7 +108,7 @@ header {
   top: 36px;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(247, 254, 246, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 2px solid var(--border-dark);
   z-index: 1000;
@@ -834,7 +834,7 @@ section {
   width: 100%;
   padding: 12px 16px;
   border: 2px solid var(--border-light);
-  background: white;
+  background: var(--bg-surface);
   font-family: inherit;
   font-size: 1rem;
   color: var(--text-dark);
@@ -938,7 +938,7 @@ footer {
 }
 
 .modal-content {
-  background: white;
+  background: var(--bg-surface);
   width: 100%;
   max-width: 500px;
   border: 2px solid var(--border-dark);
@@ -1077,7 +1077,7 @@ footer {
   display: block;
   border: 2px solid var(--border-dark);
   padding: 0.5rem;
-  background: white;
+  background: var(--bg-surface);
   box-shadow: 4px 4px 0px var(--border-light);
 }
 
@@ -1219,25 +1219,25 @@ body.is-revealed .reveal-drop {
   animation: drop-in-bounce 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-/* Staggered drops starting 0.5s after the intro swipe animation ends (1.3s swipe duration + 0.5s delay = 1.8s) */
+/* Staggered drops starting immediately the moment the intro slide animation ends (1.30s) */
 body.is-revealed .reveal-drop.drop-delay-1 {
-  animation-delay: 1.80s;
+  animation-delay: 1.30s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-2 {
-  animation-delay: 1.87s;
+  animation-delay: 1.37s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-3 {
-  animation-delay: 1.94s;
+  animation-delay: 1.44s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-4 {
-  animation-delay: 2.01s;
+  animation-delay: 1.51s;
 }
 
 body.is-revealed .reveal-drop.drop-delay-5 {
-  animation-delay: 2.08s;
+  animation-delay: 1.58s;
 }
 
 
