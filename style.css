@@ -1158,36 +1158,35 @@ body.is-loading {
   animation: sweep-out 1s cubic-bezier(0.86, 0, 0.07, 1) 0.3s forwards;
 }
 
-/* Staggered entering animations for main page components */
+/* Staggered entering animations for main page components - changed to drop-in bounce */
 .reveal-anim {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(-80px);
+  will-change: transform, opacity;
 }
 
 body.is-revealed .reveal-anim {
-  opacity: 1;
-  transform: translateY(0);
+  animation: drop-in-bounce 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 body.is-revealed .delay-1 {
-  transition-delay: 0.35s;
+  animation-delay: 1.30s;
 }
 
 body.is-revealed .delay-2 {
-  transition-delay: 0.45s;
+  animation-delay: 1.37s;
 }
 
 body.is-revealed .delay-3 {
-  transition-delay: 0.55s;
+  animation-delay: 1.44s;
 }
 
 body.is-revealed .delay-4 {
-  transition-delay: 0.65s;
+  animation-delay: 1.51s;
 }
 
 body.is-revealed .delay-5 {
-  transition-delay: 0.75s;
+  animation-delay: 1.58s;
 }
 
 /* --- HERO BUTTONS PHYSICS DROP-IN & BOUNCE ANIMATION --- */
@@ -1239,5 +1238,42 @@ body.is-revealed .reveal-drop.drop-delay-4 {
 body.is-revealed .reveal-drop.drop-delay-5 {
   animation-delay: 1.58s;
 }
+
+/* --- SCROLL REVEAL ANIMATIONS FOR SERVICE CARDS --- */
+@keyframes dropInGraceful {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card.reveal-scroll {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.service-card.reveal-scroll.is-visible {
+  opacity: 1;
+  animation: dropInGraceful 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
+}
+
+/* Staggered entry delays for service cards */
+.service-card.reveal-scroll.is-visible:nth-child(1) {
+  animation-delay: 0s;
+}
+.service-card.reveal-scroll.is-visible:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.service-card.reveal-scroll.is-visible:nth-child(3) {
+  animation-delay: 0.24s;
+}
+.service-card.reveal-scroll.is-visible:nth-child(4) {
+  animation-delay: 0.36s;
+}
+
 
 

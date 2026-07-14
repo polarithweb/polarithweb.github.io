@@ -217,13 +217,142 @@ function updateOrCreateBreadcrumb(schema) {
   }
 }
 
+// Universal Drop-In Animations for all pages, headings, texts, and cards
+function injectUniversalAnimationStyles() {
+  const hasIntro = document.getElementById('intro-transition-container') !== null;
+  const baseDelay = hasIntro ? 1.30 : 0.05;
+  const step = 0.07;
+
+  const styleId = 'universal-drop-animations-style';
+  if (document.getElementById(styleId)) return;
+
+  const styleEl = document.createElement('style');
+  styleEl.id = styleId;
+  styleEl.textContent = `
+    /* Universal Drop-In Animations Keyframes */
+    @keyframes drop-in-bounce-universal {
+      0% {
+        opacity: 0;
+        transform: translateY(-80px) scale(0.92);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(15px) scale(1.03);
+      }
+      75% {
+        transform: translateY(-5px) scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* Target class */
+    .reveal-drop-universal {
+      opacity: 0;
+      transform: translateY(-80px);
+      will-change: transform, opacity;
+    }
+
+    body.is-revealed .reveal-drop-universal {
+      animation: drop-in-bounce-universal 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
+    }
+
+    /* Staggered delays */
+    body.is-revealed .drop-delay-univ-1 { animation-delay: ${baseDelay}s !important; }
+    body.is-revealed .drop-delay-univ-2 { animation-delay: ${(baseDelay + step).toFixed(2)}s !important; }
+    body.is-revealed .drop-delay-univ-3 { animation-delay: ${(baseDelay + step * 2).toFixed(2)}s !important; }
+    body.is-revealed .drop-delay-univ-4 { animation-delay: ${(baseDelay + step * 3).toFixed(2)}s !important; }
+    body.is-revealed .drop-delay-univ-5 { animation-delay: ${(baseDelay + step * 4).toFixed(2)}s !important; }
+  `;
+  document.head.appendChild(styleEl);
+}
+
+function applyUniversalDropAnimations() {
+  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
+  
+  if (!isIndexPage) {
+    // For non-index pages, we must add 'is-revealed' to body to trigger animations!
+    setTimeout(() => {
+      document.body.classList.add("is-revealed");
+    }, 50);
+  }
+
+  const targets = [];
+
+  // 1. Header
+  const header = document.querySelector('header');
+  if (header && !header.classList.contains('reveal-anim') && !header.classList.contains('reveal-drop')) {
+    targets.push(header);
+  }
+
+  // 2. Headings & Hero Info
+  const main = document.querySelector('main') || document.body;
+  if (main) {
+    const h1s = main.querySelectorAll('h1');
+    h1s.forEach(h1 => {
+      if (!h1.classList.contains('reveal-anim') && !h1.classList.contains('reveal-drop')) {
+        targets.push(h1);
+      }
+    });
+
+    // Paragraphs near the top (e.g., hero descriptions)
+    const topParagraphs = main.querySelectorAll('h1 + p, .hero-desc, .hero-blogs p, .hero-sec p, main section:first-of-type p');
+    topParagraphs.forEach(p => {
+      if (!targets.includes(p) && !p.classList.contains('reveal-anim') && !p.classList.contains('reveal-drop')) {
+        targets.push(p);
+      }
+    });
+
+    // Primary/secondary CTA buttons near the top
+    const topButtons = main.querySelectorAll('main section:first-of-type .btn-primary, main section:first-of-type .btn-secondary, main section:first-of-type button, main section:first-of-type a[style*="padding"]');
+    topButtons.forEach(btn => {
+      if (!targets.includes(btn) && !btn.classList.contains('reveal-anim') && !btn.classList.contains('reveal-drop') && btn.offsetParent !== null) {
+        targets.push(btn);
+      }
+    });
+
+    // Content headers (h2)
+    const h2s = main.querySelectorAll('h2, .section-title');
+    h2s.forEach(h2 => {
+      if (!targets.includes(h2) && !h2.classList.contains('reveal-anim') && !h2.classList.contains('reveal-drop')) {
+        targets.push(h2);
+      }
+    });
+
+    // Cards, bento boxes, etc.
+    const cards = main.querySelectorAll('.service-card, .blog-card, .project-card, .ai-card, .bento-box, .faq-item, .approach-text-box, .feature-card, .projects-grid > div, .blogs-grid > div, .services-grid > div');
+    cards.forEach(card => {
+      if (!targets.includes(card) && !card.classList.contains('reveal-anim') && !card.classList.contains('reveal-drop') && !card.classList.contains('reveal-scroll')) {
+        targets.push(card);
+      }
+    });
+  }
+
+  // Apply target class and staggered delays
+  let staggerIndex = 1;
+  targets.forEach(el => {
+    el.classList.add('reveal-drop-universal');
+    el.classList.add(`drop-delay-univ-${staggerIndex}`);
+    staggerIndex++;
+    if (staggerIndex > 5) {
+      staggerIndex = 1;
+    }
+  });
+}
+
 // Auto-run on load
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     initDynamicBranding();
     injectDynamicBreadcrumbs();
+    injectUniversalAnimationStyles();
+    applyUniversalDropAnimations();
   });
 } else {
   initDynamicBranding();
   injectDynamicBreadcrumbs();
+  injectUniversalAnimationStyles();
+  applyUniversalDropAnimations();
 }

@@ -118,6 +118,7 @@ function renderServices() {
   // If there are no custom projects fetched yet via Firestore subscription,
   // we preserve the semantic, keyword-optimized fallback cards for maximum search indexing (SEO).
   if (projectsData.length === 0) {
+     initServicesObserver();
      return;
   }
 
@@ -128,14 +129,14 @@ function renderServices() {
     const isDark = !!project.darkMode;
 
     if (project.bgImage && project.bgImage.trim() !== '') {
-      el.className = isDark ? "service-card has-bg dark-mode" : "service-card has-bg";
+      el.className = isDark ? "service-card has-bg dark-mode reveal-scroll" : "service-card has-bg reveal-scroll";
       if (isDark) {
         el.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('${project.bgImage}')`;
       } else {
         el.style.backgroundImage = `url('${project.bgImage}')`;
       }
     } else {
-      el.className = isDark ? "service-card dark-mode" : "service-card";
+      el.className = isDark ? "service-card dark-mode reveal-scroll" : "service-card reveal-scroll";
       if (isDark) {
         el.style.background = "#0f172a"; // slate-900 backup for dark mode card with no bg image
       } else {
@@ -173,6 +174,8 @@ function renderServices() {
     `;
     container.appendChild(el);
   });
+
+  initServicesObserver();
 }
 
 window.contactForProject = function(title, price) {
@@ -1724,3 +1727,30 @@ window.toggleFaq = function(element) {
     if (icon) icon.style.transform = "rotate(45deg)";
   }
 };
+
+let servicesObserver = null;
+
+function initServicesObserver() {
+  if (servicesObserver) {
+    servicesObserver.disconnect();
+  }
+
+  const cards = document.querySelectorAll('.service-card.reveal-scroll');
+  if (cards.length === 0) return;
+
+  servicesObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  cards.forEach(card => {
+    servicesObserver.observe(card);
+  });
+}
