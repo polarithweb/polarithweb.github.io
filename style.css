@@ -1158,15 +1158,26 @@ body.is-loading {
   animation: sweep-out 1s cubic-bezier(0.86, 0, 0.07, 1) 0.3s forwards;
 }
 
-/* Staggered entering animations for main page components - changed to drop-in bounce */
+/* Staggered entering animations for main page components - sliding animation */
+@keyframes slide-up-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .reveal-anim {
   opacity: 0;
-  transform: translateY(-80px);
+  transform: translateY(30px);
   will-change: transform, opacity;
 }
 
 body.is-revealed .reveal-anim {
-  animation: drop-in-bounce 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: slide-up-reveal 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 body.is-revealed .delay-1 {
