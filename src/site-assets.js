@@ -4,19 +4,8 @@ import { db, doc, collection, onSnapshot } from './firebaseConfig.js';
 export function applyDynamicImages(images) {
   if (!images) return;
 
-  // 1. Logo (logo.png)
-  if (images.logo && images.logo.trim() !== '') {
-    const logos = document.querySelectorAll('.brand-logo, img[src="./logo.png"]');
-    logos.forEach(logo => {
-      logo.src = images.logo;
-      logo.removeAttribute('onerror');
-    });
-  } else {
-    const logos = document.querySelectorAll('.brand-logo');
-    logos.forEach(logo => {
-      logo.src = './logo.png';
-    });
-  }
+  // 1. Logo (static asset)
+  // Removed dynamic Firestore override - loaded statically from ./assets/aistudio/download_f686cd02.webp directly.
 
   // 2. Favicon (favicon.png)
   // Removed dynamic override as search engines require a fixed favicon.png in code/file structure.

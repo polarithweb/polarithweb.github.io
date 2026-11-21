@@ -298,16 +298,14 @@ function setupAdmin() {
   const saveImagesBtn = document.getElementById('save-images-btn');
   const saveImagesStatus = document.getElementById('save-images-status');
 
-  const assetsList = ['logo', 'img1', 'img2', 'img3'];
+  const assetsList = ['img1', 'img2', 'img3'];
   const defaultAssetPaths = {
-    logo: './logo.png',
     img1: './img1.png',
     img2: './img2.png',
     img3: './img3.png'
   };
 
   let currentImagesState = {
-    logo: '',
     img1: '',
     img2: '',
     img3: ''
