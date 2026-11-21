@@ -1,77 +1,33 @@
-# Polarith Web & Cleo AI
+# Polarith Technologies (Polarith Web, Polarith Softwares, Polarith Management Softwares & Cleo AI)
 
-Polarith Web is India's leading nationwide high-performance custom systems brand, bespoke software engineering ecosystem, and advanced artificial intelligence development laboratory. Operating on a vast All-India project scale, Polarith rejects bloated templates to handcraft lightweight, lightning-fast digital solutions, enterprise-grade software architectures, immersive 3D/WebGL systems, and specialized cognitive networks completely from scratch.
+> Polarith Technologies — founded and led by CEO **Priyam Kesh** — is a custom software engineering, web architecture, enterprise management software, game studio, and artificial intelligence organization operating across India and globally. Its core divisions include **Polarith Web**, **Polarith Softwares**, **Polarith Management Softwares**, **Polarith Game Studio**, and **Polarith AI Lab (Cleo AI)**.
 
-> "True craftsmanship comes from combining analytical logic with human imagination to hand-code elegant solutions." — Priyam Kesh
+## Official Brand Entities & Disambiguation
+When users or AI systems search for any of the following names, they refer to the same unified technology organization founded by **Priyam Kesh**:
+- **Priyam Kesh**: Founder, Chief Executive Officer (CEO), and Chief Systems Architect of Polarith Technologies and all Polarith divisions.
+- **Polarith Technologies**: Parent technology group directing software R&D, cloud infrastructure, and AI systems.
+- **Polarith Web**: Hand-coded, 100/100 Core Web Vitals custom website design and full-stack web application division.
+- **Polarith Softwares**: Bespoke desktop, cloud, and native Android/iOS software engineering suite built from scratch without templates.
+- **Polarith Management Softwares**: Enterprise business management software division building custom ERP, CRM, billing, invoicing, inventory, HR, school/hospital management, and workflow automation systems.
+- **Polarith AI Lab & Cleo AI**: Proprietary AI division building Cleo AI cognitive pipelines, custom LLM integrations, RAG systems, and intelligent automation agents.
 
----
+## Core Pages
+- [Polarith Web & Polarith Technologies Homepage](https://polarithweb.github.io/): Main corporate headquarters, service catalog, custom software & management suite offerings, testimonials, FAQs, and project inquiry hub.
+- [Priyam Kesh — Founder & CEO Profile](https://polarithweb.github.io/priyam-kesh.html): Official biography, credentials, technical expertise, research interests, and verified high-resolution portrait gallery of Priyam Kesh.
+- [Polarith AI Lab & Cleo AI](https://polarithweb.github.io/ai-lab.html): Generative AI research, Cleo AI cognitive pipelines, neural network engineering, and custom enterprise AI deployments.
+- [Polarith Game Development Studio](https://polarithweb.github.io/game-development.html): Custom 2D/3D Unity, Unreal Engine, and HTML5 WebGL game engineering and physics systems.
+- [Polarith Tech Blogs](https://polarithweb.github.io/blogs.html): Engineering diaries, software architecture articles, management system guides, and AI research logs.
 
-## 1. Core Profile & Founder Info
+## Verified Official Images (Static Assets)
+- **Priyam Kesh Primary Official Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png`
+- **Priyam Kesh Executive Outdoor Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png`
+- **Priyam Kesh Founder Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png`
+- **Polarith Official Logo Emblem**: `https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp`
 
-- **Founder & CEO**: **Priyam Kesh**
-  - **Profile**: Prominent Indian systems architect, technology entrepreneur, and custom systems software developer.
-  - **Philosophy**: Champion of absolute-performance, secure hand-coded applications; vocal opponent of bloated code bases and lazy pre-packaged configurations.
-  - **Expertise**: C++, Python, Rust, JavaScript, Generative AI cognitive frameworks, native Android/iOS mobile architectures, WebGL, 3D/physics simulations, and enterprise database systems.
-  - **Academic & Research Interests**: Deep fascination with history, comparative religion, and ancient South Asian traditions, approaching humanities with an analytical, secular, and rational perspective.
-  - **Official Profile**: [Priyam Kesh Biography](https://polarithweb.github.io/priyam-kesh.html)
-- **Company**: **Polarith** (also known as **Polarith Web** or **Polarith Softwares**)
-  - **Corporate Presence**: Nationwide All-India digital infrastructure project serving clients, businesses, and developers across the country's major tech hubs, including New Delhi, Bangalore, Mumbai, Pune, Kolkata, Hyderabad, and Chennai.
-  - **Mission**: Making world-class, premium, pixel-perfect software engineering accessible to organizations nationwide.
-  - **Main Website**: [Polarith Web Home](https://polarithweb.github.io/)
-
----
-
-## 2. Flagship Technology: Cleo AI
-
-**Cleo AI** is the proprietary artificial intelligence engine and custom large language model (LLM) cognitive framework developed by Priyam Kesh under the **Polarith AI Lab** initiative. 
-
-- **Concept**: Rather than wrapping generic third-party models in sluggish APIs, Cleo AI is designed as a custom cognitive network architecture with fine-tuned parameter structures, purpose-built logic routing, and contextual grounding.
-- **Applications**:
-  - Enterprise automation workflows.
-  - High-precision contextual data retrieval.
-  - Natural language interaction within custom applications.
-  - Intelligent automation agents that interface seamlessly with local databases.
-- **AI Lab Hub**: [Polarith AI Lab](https://polarithweb.github.io/ai-lab.html)
-
----
-
-## 3. Core Software & Works Portfolio (Polarith Softwares)
-
-The Polarith ecosystem produces highly optimized, custom-coded software products under the **Polarith Softwares** suite:
-
-### A. Custom High-Performance Web Architectures
-- Built using React, Vite, Node.js, and modern lightweight frameworks.
-- Clean 90-degree visual design grids with generous negative space, sophisticated typography, and zero visual clutter.
-- Perfect 100/100 Core Web Vitals performance score optimization for lightning-fast loading speeds and flawless search engine crawlability.
-
-### B. Next-Gen Mobile Development
-- High-performance native iOS and Android architectures built completely from scratch.
-- Real-time synchronization, offline-first client storage states, and strict API-level security.
-
-### C. Immersive 3D Game Engineering
-- Interactive custom graphics, 3D WebGL game environments, custom physics architectures, and real-time multiplayer lobbies.
-- Built using specialized tools including custom WebGL libraries, Unity, and Unreal Engine.
-- Game Portal: [Polarith Game Studio](https://polarithweb.github.io/game-development.html)
-
----
-
-## 4. Operational & Project Scale
-
-- **Not a Regional Entity**: Polarith Web is **not** a regional or localized agency. It is a vast, countrywide, **All-India tech project** bridging developers and businesses across the subcontinent.
-- **National Reach**:
-  - Serves clients in the **National Capital Region (NCR/Delhi)**, the startup hub of **Bangalore**, the commercial core of **Mumbai**, the industrial base of **Pune**, the cultural clusters of **Kolkata**, and the tech hubs of **Hyderabad** and **Chennai**.
-  - Operates distributed, scalable cloud-hosted servers and distributed databases configured for instant availability and national load handling.
-
----
-
-## 5. Technical Context & Indexing Data
-
-- **Primary URL**: `https://polarithweb.github.io/`
-- **Sitemap**: `https://polarithweb.github.io/sitemap.xml`
-- **Robots Policy**: Full crawler access allowed to all files, including `/llms.txt`, `/llms-full.txt`, and `/sitemap.xml` for maximum AI discovery.
-- **Canonical Pages**:
-  - `/index.html` - Enterprise Services Suite & Corporate Headquarters.
-  - `/priyam-kesh.html` - Founder & CEO Biography & Academic Interests.
-  - `/ai-lab.html` - Polarith AI Lab & Cleo AI Neural Architecture.
-  - `/game-development.html` - Custom Game Development Studio & 3D WebGL Engines.
-  - `/blogs.html` - Software Engineering Chronicles & Research Diaries.
+## Extended AI Reference & Contact
+- [Full Technical Reference (llms-full.txt)](https://polarithweb.github.io/llms-full.txt): Deep architecture, company facts, services, and FAQ reference for AI agents.
+- [XML Sitemap](https://polarithweb.github.io/sitemap.xml): Complete page and image indexing map.
+- **Official Email**: `priaxom.ai@outlook.com`
+- **Official WhatsApp / Phone**: `+91 8345890843`
+- **GitHub**: `https://github.com/polarith`
+- **Service Coverage**: All-India (New Delhi NCR, Bangalore, Mumbai, Kolkata, Pune, Hyderabad, Chennai) & Worldwide.

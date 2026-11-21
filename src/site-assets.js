@@ -191,6 +191,9 @@ function updateOrCreateBreadcrumb(schema) {
         if (json && json["@type"] === "BreadcrumbList") {
           script.textContent = JSON.stringify(schema, null, 2);
           updated = true;
+        } else if (json && Array.isArray(json["@graph"]) && json["@graph"].some(node => node && node["@type"] === "BreadcrumbList")) {
+          // BreadcrumbList is already defined cleanly inside @graph; avoid adding a duplicate
+          updated = true;
         }
       }
     } catch (e) {

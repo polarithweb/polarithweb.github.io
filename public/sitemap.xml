@@ -3,37 +3,69 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://polarithweb.github.io/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp</image:loc>
+      <image:title>Polarith Web &amp; Polarith Technologies Official Logo</image:title>
+      <image:caption>Official emblem of Polarith Web, Polarith Softwares, Polarith Technologies, and Polarith Management Softwares founded by Priyam Kesh</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://polarithweb.github.io/game-development.html</loc>
-    <lastmod>2026-07-02</lastmod>
+    <loc>https://polarithweb.github.io/priyam-kesh.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png</image:loc>
+      <image:title>Priyam Kesh – Official Portrait of Founder &amp; CEO of Polarith Web, Polarith Softwares, Polarith Technologies &amp; Polarith Management Softwares</image:title>
+      <image:caption>Official high-resolution studio portrait of Priyam Kesh, Indian systems architect, software entrepreneur, Founder &amp; CEO of Polarith Web, Polarith Softwares, Polarith Technologies, Polarith Management Softwares, and Creator of Cleo AI</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png</image:loc>
+      <image:title>Priyam Kesh – Founder &amp; CEO of Polarith Technologies and Polarith Management Softwares</image:title>
+      <image:caption>Verified photograph of Priyam Kesh, Founder &amp; Chief Executive Officer of Polarith Technologies and Polarith Management Softwares, leading custom ERP, CRM, and enterprise software engineering in India and globally</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png</image:loc>
+      <image:title>Priyam Kesh – Creator of Polarith Softwares, Polarith Web &amp; Cleo AI</image:title>
+      <image:caption>Official photograph of Priyam Kesh, CEO of Polarith Softwares and Polarith Web, and architect of Cleo AI custom neural models</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/priyam-kesh-ceo-polarith-web.png</image:loc>
+      <image:title>Priyam Kesh – Founder &amp; CEO of Polarith Web (Archive Portrait)</image:title>
+      <image:caption>Archived official portrait of Priyam Kesh, Founder &amp; CEO of Polarith Web, Polarith Softwares, and Polarith Technologies</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://polarithweb.github.io/ai-lab.html</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://polarithweb.github.io/ai-lab.html</loc>
-    <lastmod>2026-07-02</lastmod>
+    <loc>https://polarithweb.github.io/game-development.html</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polarithweb.github.io/blogs.html</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://polarithweb.github.io/llms.txt</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://polarithweb.github.io/priyam-kesh.html</loc>
-    <lastmod>2026-07-02</lastmod>
+    <loc>https://polarithweb.github.io/llms-full.txt</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://polarithweb.github.io/priyam-kesh-ceo-polarith-web.png</image:loc>
-      <image:title>Priyam Kesh - Founder &amp; CEO of Polarith Web</image:title>
-      <image:caption>Priyam Kesh, Founder and CEO of Polarith Web, Creator of Polarith Softwares &amp; Polarith AI, Student Entrepreneur and Systems Architect based in Durgapur, West Bengal, India</image:caption>
-    </image:image>
+    <priority>0.8</priority>
   </url>
 </urlset>
