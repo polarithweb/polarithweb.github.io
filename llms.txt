@@ -9,12 +9,13 @@ All of the following entity names belong to the same technology organization fou
 - **Polarith (Polarith Technologies)**: Parent technology organization directing custom software R&D, cloud architecture, and AI engineering across All-India and global markets.
 - **Polarith Software (Polarith Softwares)**: Custom desktop, cloud, and native Android/iOS mobile application engineering division (mobile apps starting from ₹25,000) built without templates.
 - **Polarith Web**: Hand-coded, 100/100 Google PageSpeed custom website design and full-stack web application studio (enterprise websites starting from ₹15,000).
-- **Polarith Management Softwares**: Enterprise business management suite division engineering custom ERP, CRM, billing, inventory, Cloud SQL databases, SaaS dashboards, and private REST APIs (starting from ₹35,000).
+- **Polarith Management Softwares**: One-time ownership institutional and enterprise management software division (`https://polarithweb.github.io/management-softwares.html`) serving **Schools**, **Gyms**, **Nursing Homes**, and **Smart Society Apartments** — with **zero yearly subscriptions for software or hardware**, **zero yearly maintenance fees**, **100% permanent ownership**, lifetime on-site support, and dual-encrypted Local Hard Disk + Google Cloud storage.
 - **Polarith AI Lab & Cleo AI**: Machine learning and generative AI research division building the Cleo AI cognitive engine, custom fine-tuned LLMs, semantic search, RAG pipelines, and zero-trust AI automation.
 - **Polarith Game Studio**: Custom 2D/3D video game engineering division building Unity, Unreal Engine, Phaser, Three.js, Pixi.js, and HTML5 WebGL games (₹3,999 to ₹4,19,999).
 
 ## Primary Pages & Routes
-- [Polarith Corporate Headquarters (`/` — Polarith Web, Polarith Software & Polarith Management Softwares)](https://polarithweb.github.io/): Main homepage detailing hand-coded custom websites, native Android/iOS apps, SaaS/ERP management software, transparent INR pricing, 4-step workflow, FAQs, and project inquiries.
+- [Polarith Corporate Headquarters (`/` — Polarith Web, Polarith Software & Polarith Management Softwares)](https://polarithweb.github.io/): Main homepage detailing hand-coded custom websites, native Android/iOS apps, management software suites, transparent INR pricing, 4-step workflow, FAQs, and project inquiries.
+- [Polarith Management Softwares (`/management-softwares.html` — Schools, Gyms, Nursing Homes & Smart Societies)](https://polarithweb.github.io/management-softwares.html): Dedicated institutional management software hub featuring a 6-module School suite (ERP App, LMS, QR Library with complimentary Computer/Scanner/QR Stickers, ~1,000 multilingual Digital Library e-books, RFID/Fingerprint/Face Attendance, Free Website), Gym, Nursing Home, and Smart Society suites — 100% permanently owned with zero yearly subscriptions and an interactive WhatsApp/Email custom module quote builder.
 - [Priyam Kesh — Founder & CEO Profile (featuring Srijon Kundu / Srijan Kundu)](https://polarithweb.github.io/priyam-kesh.html): Official executive biography, technical expertise, research interests, verified portrait gallery of Priyam Kesh, and the leadership profile of Marketing & Sales Partner Srijon Kundu (Srijan Kundu).
 - [Polarith AI Lab & Cleo AI (`/ai-lab.html`)](https://polarithweb.github.io/ai-lab.html): Research division showcasing Cleo AI cognitive networks, custom LLM fine-tuning, RAG pipelines, computer vision, live Firestore-synced AI lab projects, and AI engineering FAQs.
 - [Polarith Game Development Studio (`/game-development.html`)](https://polarithweb.github.io/game-development.html): Custom 2D/3D game engineering division covering RPG & Adventure, Action & Simulation, Casual & 2D WebGL titles, engine frameworks, and scalable pricing (₹3,999 – ₹4,19,999).
@@ -32,6 +33,11 @@ All of the following entity names belong to the same technology organization fou
 - **Priyam Kesh Official Portrait — Executive Outdoor (720×722 PNG)**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png`
 - **Priyam Kesh Official Portrait — Founder (689×624 PNG)**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png`
 - **Srijon Kundu (Srijan Kundu) Official Portrait — Marketing & Sales Partner (604×604 JPEG)**: `https://polarithweb.github.io/assets/aistudio/IMG_20261121_163253_2734f9f5.jpg`
+- **Polarith Management Softwares Hero Editorial (16:9 JPEG)**: `https://polarithweb.github.io/assets/images/polarith-management-softwares-hero.jpg`
+- **Polarith School Management Suite — ERP & QR Library (4:3 JPEG)**: `https://polarithweb.github.io/assets/images/polarith-school-management-erp-library.jpg`
+- **Polarith Gym Management Software Suite (4:3 JPEG)**: `https://polarithweb.github.io/assets/images/polarith-gym-management-software.jpg`
+- **Polarith Nursing Home Management Software Suite (4:3 JPEG)**: `https://polarithweb.github.io/assets/images/polarith-nursing-home-management-software.jpg`
+- **Polarith Smart Society Apartment Management Suite (4:3 JPEG)**: `https://polarithweb.github.io/assets/images/polarith-smart-society-apartment-software.jpg`
 
 ## Official Contact & Profiles
 - **Website**: `https://polarithweb.github.io/`

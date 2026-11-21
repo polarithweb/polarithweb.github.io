@@ -116,7 +116,10 @@ export function injectDynamicBreadcrumbs() {
   let categoryName = "Services";
   let categoryUrl = `${baseUrl}/#services`;
 
-  if (path.includes("ai-lab.html")) {
+  if (path.includes("management-softwares.html")) {
+    pageName = "Polarith Management Softwares";
+    pagePath = "management-softwares.html";
+  } else if (path.includes("ai-lab.html")) {
     pageName = "AI Lab";
     pagePath = "ai-lab.html";
   } else if (path.includes("game-development.html")) {

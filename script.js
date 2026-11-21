@@ -1638,16 +1638,24 @@ function setupInteractions() {
   closeBtns.forEach(btn => {
     btn.addEventListener("click", (e) => {
       const modal = e.target.closest('.modal-backdrop');
-      if (modal) modal.classList.remove("active");
+      if (modal && modal.id) window.closeModal(modal.id);
     });
   });
 
   document.querySelectorAll(".modal-backdrop").forEach(backdrop => {
     backdrop.addEventListener("click", (e) => {
-      if (e.target === backdrop) {
-        backdrop.classList.remove("active");
+      if (e.target === backdrop && backdrop.id) {
+        window.closeModal(backdrop.id);
       }
     });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal-backdrop.active").forEach(modal => {
+        if (modal.id) window.closeModal(modal.id);
+      });
+    }
   });
 
   const contactForm = document.getElementById("contact-form");
@@ -1700,12 +1708,20 @@ function setupInteractions() {
 
 window.openModal = function(id) {
   const modal = document.getElementById(id);
-  if (modal) modal.classList.add("active");
+  if (modal) {
+    modal.style.display = "";
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
 };
 
 window.closeModal = function(id) {
   const modal = document.getElementById(id);
-  if (modal) modal.classList.remove("active");
+  if (modal) {
+    modal.classList.remove("active");
+    modal.style.display = "";
+    document.body.style.overflow = "";
+  }
 };
 
 window.toggleFaq = function(element) {

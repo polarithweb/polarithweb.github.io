@@ -17,6 +17,7 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
+          'management-softwares': path.resolve(__dirname, 'management-softwares.html'),
           'game-development': path.resolve(__dirname, 'game-development.html'),
           'priyam-kesh': path.resolve(__dirname, 'priyam-kesh.html'),
           'ai-lab': path.resolve(__dirname, 'ai-lab.html'),

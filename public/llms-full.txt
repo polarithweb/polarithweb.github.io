@@ -15,7 +15,7 @@
 | **Polarith** / **Polarith Technologies** | Organization (Parent Group) | Umbrella technology organization overseeing all engineering divisions and R&D | `https://polarithweb.github.io/` |
 | **Polarith Web** | Division / Service | Hand-coded custom website development, landing pages, corporate portals, and full-stack web applications | `https://polarithweb.github.io/#website-developer` |
 | **Polarith Software** (alt: **Polarith Softwares**) | Division / SoftwareApplication | Bespoke software engineering, native Android & iOS mobile apps, desktop tools, and scalable cloud backends | `https://polarithweb.github.io/#software-company` |
-| **Polarith Management Softwares** | Division / SoftwareApplication | Custom enterprise ERP, CRM, billing, inventory, Cloud SQL pipelines, SaaS dashboards, and private RESTful APIs | `https://polarithweb.github.io/#services` |
+| **Polarith Management Softwares** | Division / SoftwareApplication | One-time ownership institutional management software & hardware suites for Schools, Gyms, Nursing Homes, and Smart Society Apartments with zero yearly subscriptions | `https://polarithweb.github.io/management-softwares.html` |
 | **Polarith AI Lab** & **Cleo AI** | Research Division / AI Product | Custom Generative AI, Cleo AI cognitive engine, fine-tuned LLMs, RAG pipelines, semantic search, and ML automation | `https://polarithweb.github.io/ai-lab.html` |
 | **Polarith Game Studio** | Division / Service | Custom 2D/3D video game development using Unity, Unreal Engine, Phaser, Three.js, Pixi.js, and HTML5 WebGL | `https://polarithweb.github.io/game-development.html` |
 | **Polarith Tech Blogs** | Publication / Blog | Engineering diaries and research publications on custom software, management suites, WebGL, and AI | `https://polarithweb.github.io/blogs.html` |
@@ -80,16 +80,27 @@
   - Zero-bloat codebases engineered to run smoothly even on budget hardware
   - Custom cross-platform desktop software, developer tools, and private business utilities
 
-### C. Polarith Management Softwares — Tailored SaaS Dashboards, ERP, CRM & Databases
-- **Starting Price**: ₹35,000
-- **Tag**: Enterprise
-- **Deliverables & Capabilities**:
-  - Secure Cloud SQL and Firestore database pipelines
-  - Custom private Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) systems
-  - Billing, GST-ready invoicing, inventory tracking, ledger analytics, HR, and operational automation dashboards
-  - Institutional management suites for schools, clinics, retail stores, warehouses, and service agencies
-  - Real-time multi-agent communication and synchronization
-  - Fully custom RESTful business APIs and multi-tenant role-based access control
+### C. Polarith Management Softwares — One-Time Ownership Institutional Suites (Schools, Gyms, Nursing Homes & Smart Society Apartments)
+- **Dedicated Page URL**: `https://polarithweb.github.io/management-softwares.html`
+- **Ownership & Subscription Covenant**:
+  - **Zero Yearly Subscriptions for Software or Hardware** — strictly ₹0/year renewal fees.
+  - **Zero Yearly Maintenance Fee (AMC)** — no recurring annual charges after deployment.
+  - **100% Permanent Ownership** — once purchased, the school or organization permanently owns all software, attendance hardware, barcode/QR scanners, and the library computer, with zero future ownership claim by Polarith.
+  - **Lifetime On-Site Technical Support** by Polarith's own engineering team whenever an issue occurs.
+  - **Complete Hands-On Staff Training** and **End-to-End Legacy Record Digitalization** performed by Polarith's team.
+  - **100% Encrypted Dual-Layer Database** stored on both **Local Hard Disk** and **Google Cloud Server**.
+  - **Flexible Service Selection** — zero forced bundling; institutions pick only the exact modules and hardware they need.
+- **1. Flagship School Management Software Suite (6 Core Modules)**:
+  - **01. Branded School ERP App**: Published in the school's own name on Google Play Store (Android) and optionally Apple App Store (iOS). Modules: Student Attendance (daily & monthly digital verification), Class Routine & Holidays, Fees Collection (paid vs. pending ledger), Teacher Management (daily teacher attendance & monthly teacher salary), and Instant Notices & Circulars.
+  - **02. Learning Management System (LMS)**: Available integrated inside the School ERP App or as a standalone app, 100% controlled by school administration & teachers. Modules: Live Online Classes, Chapter-wise Offline Recorded Videos, School Notes & PDFs, and Chapter-wise/Full-Syllabus Online Tests.
+  - **03. Paperless QR Library Management System**: Includes a **complimentary Computer, Barcode/QR Scanner, and unique QR Code Stickers for every book** (100% owned by the school). 4-Step Automated Workflow: (Step 1) Book & Student ID QR Prep -> (Step 2) Instant Book + Student ID QR Scan (no handwritten registers) -> (Step 3) Automatic Student Library Book Entry -> (Step 4) Exact borrower, issue date, and return date tracking on the library computer.
+  - **04. Digital Library (e-Books)**: Approximately **1,000 curated e-books** in **EPUB & PDF** formats readable across mobile, tablet, and desktop in **English, Bengali, Hindi**, plus any additional language requested by the school — supporting simultaneous multi-student reading with zero copy shortages.
+  - **05. Digital Student Attendance & RFID / Biometric Hardware**: Choose either a **Sticker for existing ID cards** or a **Full Digital ID Card**, paired with: (a) **Three Main Doorway Card Scanners** (RFID, Barcode, or QR Code) eliminating entrance crowding; (b) **Biometric Fingerprint Scanner**; or (c) **Contactless Face Recognition (Face ID)**.
+  - **06. Complimentary Official School Website**: Custom-built official school website included **completely free of charge** featuring school history, academics, urgent notices, admissions, and contacts.
+- **2. Gym & Fitness Club Management Suite**: Branded member & trainer mobile app, membership plans & GST billing with renewal alerts, RFID/Fingerprint/Face ID doorway entry control, workout routines & diet charts, supplement POS & equipment maintenance ledger, and complimentary gym website.
+- **3. Nursing Home & Clinic Management Suite**: OPD/IPD registration & live bed occupancy board, digital prescriptions & QR-verified lab reports, in-house pharmacy stock with batch/expiry alerts & GST billing, doctor rosters/nursing shifts & biometric staff payroll, offline-resilient dual-encrypted patient database (Local Hard Disk + Google Cloud), and complimentary nursing home website.
+- **4. Smart Society & Apartment Management Suite**: Ad-free branded resident & committee mobile app, automated monthly maintenance billing & audit ledger, main gate visitor QR passes & vehicle logs, guard & domestic help biometric attendance, complaint helpdesk & amenity booking calendar, and complimentary official society portal.
+- **Enterprise Custom Additions**: Also supports custom ERP, CRM lead pipelines, Cloud SQL database pipelines, and private RESTful business APIs.
 
 ### D. Polarith AI Lab & Cleo AI — Custom Artificial Intelligence & Machine Learning
 - **URL**: `https://polarithweb.github.io/ai-lab.html`
@@ -141,7 +152,10 @@
 **A:** Polarith Web is the custom web development studio of Polarith founded by Priyam Kesh. It builds hand-coded enterprise websites (starting from ₹15,000), landing pages, e-commerce stores, and full-stack React/HTML5 web applications engineered for 100/100 Google PageSpeed Insights, mobile-first responsiveness, and structured JSON-LD SEO/GEO visibility.
 
 ### Q: What are Polarith Management Softwares?
-**A:** Polarith Management Softwares is Polarith's enterprise business software division (starting from ₹35,000) creating custom ERP systems, CRM lead pipelines, GST-ready billing and invoicing suites, inventory control, school and clinic management platforms, Cloud SQL databases, SaaS dashboards, and private RESTful APIs tailored to each organization's operations.
+**A:** Polarith Management Softwares (`https://polarithweb.github.io/management-softwares.html`) is Polarith's institutional and business management software division engineered under Polarith Web and Polarith Software by Priyam Kesh. It delivers one-time ownership suites for Schools (ERP App, LMS, QR Library with complimentary Computer & Scanner, ~1,000 multilingual Digital Library e-books, RFID/Fingerprint/Face Attendance, and Free Website), Gyms, Nursing Homes, and Smart Society Apartments — with strictly zero yearly subscriptions for software or hardware, zero yearly maintenance fees, 100% permanent ownership, lifetime on-site technical support, and dual-encrypted Local Hard Disk plus Google Cloud storage.
+
+### Q: Are there any yearly subscriptions or annual maintenance fees for Polarith Management Softwares?
+**A:** No. Polarith Management Softwares has strictly zero yearly subscriptions for both software and hardware, and zero yearly maintenance fees. Once your school, gym, nursing home, or smart society purchases a suite, you pay once and own all software, attendance hardware, scanners, and the library computer 100% permanently, with Polarith making zero future ownership claim.
 
 ### Q: Who is Srijon Kundu (Srijan Kundu) at Polarith Technologies?
 **A:** Srijon Kundu (also spelled Srijan Kundu) is the Marketing and Sales Partner at Polarith Web, Polarith Software (Polarith Softwares), Polarith Technologies, and Polarith Management Softwares. Working alongside Founder & CEO Priyam Kesh, he leads marketing strategy, enterprise software sales, client onboarding, and commercial partnerships across India and global markets.

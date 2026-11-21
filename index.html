@@ -31,10 +31,14 @@
   <meta name="msvalidate.01" content="B_BING_POLARITH_VERIFY_SUCCESS_SE" />
   <meta name="yandex-verification" content="Y_YANDEX_POLARITH_VERIFY" />
   
-  <!-- Favicon Configuration (Optimized for logo.png and favicon.png 512x512) -->
+  <!-- Static Favicon Configuration (Google Search, Apple & Browser Standard) -->
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192x192.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="./favicon.png" />
-  <link rel="apple-touch-icon" sizes="512x512" href="./favicon.png" />
-  <link rel="icon" type="image/x-icon" href="./favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
   <link rel="canonical" href="https://polarithweb.github.io/" />
   <link rel="alternate" type="text/plain" title="LLMs Context" href="https://polarithweb.github.io/llms.txt" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://polarithweb.github.io/sitemap.xml" />
@@ -108,9 +112,11 @@
         "logo": {
           "@type": "ImageObject",
           "@id": "https://polarithweb.github.io/#logo",
-          "url": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
-          "contentUrl": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
-          "encodingFormat": "image/webp"
+          "url": "https://polarithweb.github.io/logo.png",
+          "contentUrl": "https://polarithweb.github.io/logo.png",
+          "width": 512,
+          "height": 512,
+          "encodingFormat": "image/png"
         },
         "image": [
           "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
@@ -175,8 +181,8 @@
             "@type": "Organization",
             "@id": "https://polarithweb.github.io/#suborg-polarith-management",
             "name": "Polarith Management Softwares",
-            "url": "https://polarithweb.github.io/#services",
-            "description": "Enterprise business management software division of Polarith engineering custom ERP, CRM, billing, inventory, Cloud SQL databases, and private REST APIs.",
+            "url": "https://polarithweb.github.io/management-softwares.html",
+            "description": "One-time ownership institutional management software division of Polarith building custom ERP, LMS, QR Library, biometric attendance, and billing suites for Schools, Gyms, Nursing Homes, and Smart Society Apartments with zero yearly subscriptions.",
             "parentOrganization": { "@id": "https://polarithweb.github.io/#organization" },
             "founder": { "@id": "https://polarithweb.github.io/priyam-kesh.html#person" }
           },
@@ -368,11 +374,11 @@
         "@type": "SoftwareApplication",
         "@id": "https://polarithweb.github.io/#polarith-management-softwares-app",
         "name": "Polarith Management Softwares",
-        "alternateName": ["Polarith ERP & CRM Suite", "Polarith Business Management Software"],
-        "url": "https://polarithweb.github.io/#services",
+        "alternateName": ["Polarith ERP & CRM Suite", "Polarith Business Management Software", "Polarith School, Gym, Nursing Home & Smart Society Software"],
+        "url": "https://polarithweb.github.io/management-softwares.html",
         "operatingSystem": "Web, Cloud, Windows, macOS, Linux, Android, iOS",
         "applicationCategory": "BusinessApplication",
-        "description": "Custom enterprise management software suites (starting from ₹35,000) by Polarith Management Softwares: tailored SaaS dashboards, private ERP & CRM systems, GST-ready billing and invoicing, inventory tracking, Cloud SQL database pipelines, and custom RESTful business APIs.",
+        "description": "Custom institutional and enterprise management software suites by Polarith Management Softwares for Schools (ERP App, LMS, QR Library + Free Computer, Digital Library, RFID/Biometric Attendance, Free Website), Gyms, Nursing Homes, and Smart Society Apartments — delivered with 100% permanent software and hardware ownership and zero yearly subscriptions.",
         "author": { "@id": "https://polarithweb.github.io/priyam-kesh.html#person" },
         "publisher": { "@id": "https://polarithweb.github.io/#organization" },
         "offers": {
@@ -466,7 +472,7 @@
             "name": "What are Polarith Management Softwares?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Polarith Management Softwares is Polarith's enterprise business management software division (starting from ₹35,000) building custom ERP platforms, CRM lead pipelines, GST-ready billing and invoicing suites, inventory management, institutional systems for schools and clinics, Cloud SQL database pipelines, SaaS dashboards, and private RESTful APIs."
+              "text": "Polarith Management Softwares is Polarith's institutional and business management software division delivering one-time ownership suites for Schools (ERP App, LMS, QR Library with complimentary Computer & Scanner, Digital Library, RFID/Biometric Attendance, and Free Website), Gyms, Nursing Homes, and Smart Society Apartments — with zero yearly subscriptions for software or hardware and 100% permanent ownership."
             }
           },
           {
@@ -534,27 +540,34 @@
           {
             "@type": "SiteNavigationElement",
             "position": 1,
+            "name": "Polarith Management Softwares",
+            "description": "Zero yearly subscription institutional management suites for Schools, Gyms, Nursing Homes & Smart Society Apartments — 100% owned upon purchase.",
+            "url": "https://polarithweb.github.io/management-softwares.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
             "name": "Priyam Kesh | Founder & CEO",
             "description": "Official profile of Priyam Kesh, Founder & CEO of Polarith, Polarith Software, Polarith Web & Polarith Management Softwares.",
             "url": "https://polarithweb.github.io/priyam-kesh.html"
           },
           {
             "@type": "SiteNavigationElement",
-            "position": 2,
+            "position": 3,
             "name": "Game Development",
             "description": "Custom Unity, Unreal & WebGL Game Development Services by Polarith Game Studio.",
             "url": "https://polarithweb.github.io/game-development.html"
           },
           {
             "@type": "SiteNavigationElement",
-            "position": 3,
+            "position": 4,
             "name": "Polarith AI Lab",
             "description": "Cleo AI, Generative AI & Machine Learning solutions by Polarith Technologies.",
             "url": "https://polarithweb.github.io/ai-lab.html"
           },
           {
             "@type": "SiteNavigationElement",
-            "position": 4,
+            "position": 5,
             "name": "Blogs",
             "description": "Engineering insights on Polarith Software, Polarith Web, Polarith Management Softwares & AI.",
             "url": "https://polarithweb.github.io/blogs.html"
@@ -732,6 +745,8 @@ if (document.readyState === "loading") {
     <div class="nav-card">
       <button class="menu-close-btn" id="menu-close-btn" aria-label="Close Menu">&times;</button>
       <ul class="nav-list">
+        <li><a href="./management-softwares.html" class="nav-link" style="text-decoration: none; display: inline-block;">Polarith Management Softwares</a></li>
+        <li><button class="nav-link" data-modal="modal-database">Database Management</button></li>
         <li><button class="nav-link" data-modal="modal-about">About Us</button></li>
         <li><a href="./priyam-kesh.html" class="nav-link" style="text-decoration: none; display: inline-block;">Priyam Kesh (CEO)</a></li>
         <li><button class="nav-link" data-modal="modal-contact">Developer Contact</button></li>
@@ -753,6 +768,14 @@ if (document.readyState === "loading") {
         <div class="hero-buttons" style="display: flex; gap: 12px; flex-wrap: wrap;">
           <a href="#" onclick="startProjectWhatsApp(); return false;" class="btn-primary reveal-drop drop-delay-1">Start a Project</a>
           <a href="#services" class="btn-secondary reveal-drop drop-delay-2">See What We Do</a>
+          <a href="./management-softwares.html" class="btn-management reveal-drop drop-delay-3" style="background: #2563eb; color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(0.5px);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            Management Softwares
+          </a>
+          <button type="button" onclick="openModal('modal-database')" class="btn-database reveal-drop drop-delay-3" aria-haspopup="dialog" aria-controls="modal-database" style="background: #ffffff; color: #0f172a; border: 2px solid #0f172a; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px #2563eb; border-radius: 4px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            Database Management
+          </button>
           <a href="./game-development.html" class="btn-game-dev reveal-drop drop-delay-3" style="background: #000000; color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="transform: translateY(0.5px);"><rect x="2" y="6" width="20" height="12" rx="3"></rect><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01M18 11h.01M15 13h.01"></path></svg>
             Game Development
@@ -828,20 +851,25 @@ if (document.readyState === "loading") {
         </div>
 
         <div class="service-card reveal-scroll" style="position: relative;">
-          <div class="project-tag">Enterprise</div>
+          <div class="project-tag">Zero Yearly Fee</div>
           <div class="service-card-info-box">
-            <h3>Tailored SaaS Dashboards & DBs</h3>
-            <div class="project-price">Starting from ₹35,000</div>
+            <h3>Polarith Management Softwares</h3>
+            <div class="project-price">100% Permanent Ownership</div>
             <ul class="project-features">
-              <li>✓ Secure Cloud SQL database pipelines</li>
-              <li>✓ Real-time multi-agent communications</li>
-              <li>✓ Highly automated private ERP controls</li>
-              <li>✓ Fully custom RESTful business APIs</li>
+              <li>✓ Schools (ERP, LMS, QR Library + Free PC)</li>
+              <li>✓ Gyms, Nursing Homes &amp; Smart Societies</li>
+              <li>✓ Zero yearly software or hardware subscriptions</li>
+              <li>✓ Dual-encrypted Local + Google Cloud DB</li>
             </ul>
           </div>
-          <button class="btn-primary" style="width: 100%; margin-top: auto;" onclick="contactForProject('Tailored SaaS Dashboards & DBs', '₹35,000')">
-            Contact via WhatsApp
-          </button>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+            <a href="./management-softwares.html" class="btn-primary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; text-decoration: none; min-height: 48px; font-weight: 700;">
+              Explore Management Softwares
+            </a>
+            <button class="btn-secondary" style="width: 100%;" onclick="contactForProject('Polarith Management Softwares', 'One-Time Ownership Quote')">
+              Contact via WhatsApp
+            </button>
+          </div>
         </div>
 
         <div class="service-card reveal-scroll" style="position: relative; background: #0c0f17; color: #f8fafc; border: 2px solid #1e293b; box-shadow: 8px 8px 0px #1e293b;">
@@ -907,7 +935,7 @@ if (document.readyState === "loading") {
               Led by Founder &amp; CEO <strong>Priyam Kesh</strong>, Polarith operates as a full-lifecycle <strong>software company</strong> in India delivering custom CRM/ERP integration, GST-ready billing and inventory suites, real-time sync systems, secure Cloud SQL database architecture, and private RESTful API ecosystems so your company runs smoothly without downtime.
             </p>
             <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
-              Starting from focused dashboard utilities up to multi-tenant enterprise management platforms, our transparent milestone-based engineering process delivers measurable operational clarity.
+              Starting from focused dashboard utilities up to turnkey institutional platforms for Schools, Gyms, Nursing Homes, and Smart Societies with zero yearly subscriptions, explore our dedicated <a href="./management-softwares.html" style="color: var(--brand-primary); font-weight: 700; text-decoration: underline;">Polarith Management Softwares</a> suite.
             </p>
           </div>
         </article>
@@ -1002,7 +1030,7 @@ if (document.readyState === "loading") {
           </div>
           <div class="faq-answer">
             <p>
-              <strong>Polarith Management Softwares</strong> is Polarith's enterprise business management software division (starting from ₹35,000) building custom ERP platforms, CRM lead pipelines, GST-ready billing and invoicing suites, inventory management, institutional systems for schools and clinics, Cloud SQL database pipelines, SaaS dashboards, and private RESTful APIs.
+              <strong>Polarith Management Softwares</strong> is Polarith's institutional and business management software division delivering one-time ownership suites for <strong>Schools</strong> (ERP App, LMS, QR Library with complimentary Computer &amp; Scanner, Digital Library, RFID/Biometric Attendance, and Free Website), <strong>Gyms</strong>, <strong>Nursing Homes</strong>, and <strong>Smart Society Apartments</strong> — with zero yearly subscriptions for software or hardware and 100% permanent ownership. <a href="./management-softwares.html" style="color: var(--brand-primary); font-weight: 600; text-decoration: underline;">Explore Polarith Management Softwares &rarr;</a>
             </p>
           </div>
         </div>
@@ -1171,6 +1199,7 @@ if (document.readyState === "loading") {
           <h4>Navigation</h4>
           <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="./management-softwares.html" style="font-weight: 700; color: var(--brand-primary);">Polarith Management Softwares</a></li>
             <li><a href="./priyam-kesh.html" style="font-weight: 700; color: var(--brand-primary);">Priyam Kesh (Founder &amp; CEO of Polarith Web)</a></li>
             <li><a href="#services">Our Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -1545,6 +1574,56 @@ if (document.readyState === "loading") {
             <svg viewBox="0 0 24 24" fill="currentColor" style="width: 20px; height: 20px;"><path d="M12.004 2c-5.518 0-9.996 4.477-9.996 9.996 0 1.764.46 3.483 1.334 5.01L2 22l5.127-1.312a9.96 9.96 0 004.877 1.308c5.518 0 9.996-4.477 9.996-9.996C22.004 6.477 17.522 2 12.004 2zm5.726 14.18c-.25.703-1.464 1.28-2.02 1.354-.51.066-1.168.08-1.85-.145-2.887-.953-4.887-3.92-5.03-4.113-.14-.193-1.15-1.528-1.15-2.916 0-1.388.724-2.068.983-2.348.26-.28.56-.35.747-.35h.536l.4.896c.214.482.49.1.724.382.13.155.155.438.225.592l-.123.23c-.155.234-.33.396-.51.61-.17.198-.352.414-.15.76.2.346.892 1.472 1.91 2.38 1.31 1.17 2.413 1.53 2.756 1.673.344.143.547.123.753-.1.25-.27.876-.983 1.077-1.3a.58.58 0 01.474-.216c.254.02.735.347 1.393.673.657.327.86.438.932.56.072.123-.02.684-.27 1.388z"/></svg> 
             WhatsApp Developer
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Management Popup Modal -->
+  <div class="modal-backdrop" id="modal-database" role="dialog" aria-modal="true" aria-labelledby="modal-database-title">
+    <div class="modal-content modal-content-db">
+      <div class="modal-header modal-header-db">
+        <div>
+          <span class="db-modal-kicker">Polarith Security &amp; Infrastructure</span>
+          <h3 id="modal-database-title">Encrypted Database Management</h3>
+        </div>
+        <button type="button" class="modal-close modal-close-db" onclick="closeModal('modal-database')" aria-label="Close Database Management modal">&times;</button>
+      </div>
+      <div class="modal-body modal-body-db">
+        <div class="db-server-frame">
+          <img src="./assets/images/polarith-encrypted-database-servers.jpg" alt="Polarith Encrypted Local and Cloud Database Servers for Schools, Gyms, Nursing Homes, and Smart Societies" width="1280" height="720" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="db-server-fallback">
+            <span>Polarith Encrypted Server Infrastructure</span>
+            <strong>Local Hard Disk + Cloud Encrypted Storage</strong>
+          </div>
+        </div>
+
+        <p class="db-modal-lead">
+          We store and safeguard your complete institutional database — covering <strong>Schools, Gyms, Nursing Homes, and Smart Societies</strong> — across both <strong>on-premise Local Storage</strong> and <strong>encrypted Cloud Servers</strong>, 100% encrypted end-to-end.
+        </p>
+
+        <div class="db-pillars-grid">
+          <div class="db-pillar-card">
+            <h4>01. Local On-Premise Storage</h4>
+            <p>All student, gym member, patient, and billing records are stored locally on your own hard disk so daily operations continue smoothly even during internet outages.</p>
+          </div>
+          <div class="db-pillar-card">
+            <h4>02. Encrypted Cloud Backup</h4>
+            <p>Automatic encrypted cloud synchronization protects your complete institutional database against hardware damage, power loss, or accidental deletion.</p>
+          </div>
+          <div class="db-pillar-card">
+            <h4>03. 100% Total Encryption</h4>
+            <p>Every School, Gym, Nursing Home, and Apartment database is strictly encrypted with role-based access control — zero third-party access and full institutional ownership.</p>
+          </div>
+        </div>
+
+        <div class="db-modal-actions">
+          <a href="https://wa.me/918345890843?text=Hello%20Polarith%20Web%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Encrypted%20Local%20%2B%20Cloud%20Database%20Management%20for%20our%20institution." target="_blank" rel="noopener noreferrer" class="btn-primary">
+            Discuss Database Setup on WhatsApp
+          </a>
+          <a href="./management-softwares.html" class="btn-secondary">
+            Explore Management Softwares
+          </a>
         </div>
       </div>
     </div>
