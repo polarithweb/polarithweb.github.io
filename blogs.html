@@ -68,98 +68,152 @@
   <meta name="twitter:image" content="https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp" />
   <meta name="twitter:image:alt" content="Polarith Blogs &amp; Polarith Technologies Emblem" />
 
-  <!-- Blog Schema -->
+  <!-- Unified Connected GEO Entity Graph (JSON-LD @graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": "https://polarithweb.github.io/blogs.html#blog",
-    "name": "Polarith Blogs – Polarith Technologies & Polarith Softwares",
-    "url": "https://polarithweb.github.io/blogs.html",
-    "description": "Engineering diaries, technical guides, and research insights on Polarith Web, Polarith Softwares, Polarith Management Softwares, Cleo AI, and game engineering by Priyam Kesh.",
-    "author": {
-      "@type": "Person",
-      "@id": "https://polarithweb.github.io/priyam-kesh.html#person",
-      "name": "Priyam Kesh",
-      "url": "https://polarithweb.github.io/priyam-kesh.html",
-      "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://polarithweb.github.io/#organization",
-      "name": "Polarith Technologies",
-      "alternateName": ["Polarith Web", "Polarith Softwares", "Polarith Management Softwares"],
-      "logo": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp"
-    }
-  }
-  </script>
-
-  <!-- Breadcrumb List Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "@id": "https://polarithweb.github.io/blogs.html#breadcrumb",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://polarithweb.github.io/"
+        "@type": "Organization",
+        "@id": "https://polarithweb.github.io/#organization",
+        "name": "Polarith",
+        "legalName": "Polarith Technologies",
+        "alternateName": [
+          "Polarith Software",
+          "Polarith Softwares",
+          "Polarith Web",
+          "Polarith Management Softwares",
+          "Polarith Technologies",
+          "Polarith AI Lab",
+          "Polarith Game Studio"
+        ],
+        "url": "https://polarithweb.github.io/",
+        "logo": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
+        "description": "Polarith is an independent Indian software engineering, custom web development, AI research, and management software organization founded by Priyam Kesh in Durgapur, West Bengal, operating Polarith Software, Polarith Web, Polarith Management Softwares, Polarith AI Lab (Cleo AI), and Polarith Game Studio.",
+        "founder": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
+        },
+        "sameAs": [
+          "https://polarithweb.github.io/",
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://github.com/polarith"
+        ],
+        "subOrganization": [
+          { "@id": "https://polarithweb.github.io/#polarith-software-app" },
+          { "@id": "https://polarithweb.github.io/#polarith-web-service" },
+          { "@id": "https://polarithweb.github.io/#polarith-management-softwares-app" }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://polarithweb.github.io/#services"
+        "@type": "Person",
+        "@id": "https://polarithweb.github.io/priyam-kesh.html#person",
+        "name": "Priyam Kesh",
+        "jobTitle": "Founder, CEO & Chief Systems Architect",
+        "description": "Priyam Kesh is an Indian systems architect, software engineer, and student entrepreneur based in Durgapur, West Bengal, and the Founder & CEO of Polarith, Polarith Software, Polarith Web, and Polarith Management Softwares.",
+        "url": "https://polarithweb.github.io/priyam-kesh.html",
+        "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png",
+        "worksFor": {
+          "@id": "https://polarithweb.github.io/#organization"
+        },
+        "knowsAbout": [
+          "Full-Stack Web Engineering",
+          "Enterprise Management Software",
+          "ERP & CRM Architecture",
+          "Generative AI & Cleo AI",
+          "WebGL & Game Development"
+        ],
+        "sameAs": [
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://polarithweb.github.io/",
+          "https://github.com/polarith"
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Blogs",
-        "item": "https://polarithweb.github.io/blogs.html"
+        "@type": "WebSite",
+        "@id": "https://polarithweb.github.io/#website",
+        "name": "Polarith — Polarith Software, Polarith Web & Polarith Management Softwares",
+        "url": "https://polarithweb.github.io/",
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://polarithweb.github.io/blogs.html#blog",
+        "name": "Polarith Blogs – Polarith Software, Polarith Web & Polarith Technologies",
+        "url": "https://polarithweb.github.io/blogs.html",
+        "description": "Engineering diaries, technical guides, and research insights on Polarith Software, Polarith Softwares, Polarith Web, Polarith Management Softwares, Cleo AI, and game engineering by Priyam Kesh.",
+        "isPartOf": {
+          "@id": "https://polarithweb.github.io/#website"
+        },
+        "author": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
+        },
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://polarithweb.github.io/blogs.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://polarithweb.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://polarithweb.github.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Blogs",
+            "item": "https://polarithweb.github.io/blogs.html"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://polarithweb.github.io/blogs.html#navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Priyam Kesh | Founder & CEO",
+            "description": "Know the Founder & CEO of Polarith, Polarith Software, Polarith Web, and Polarith Management Softwares.",
+            "url": "https://polarithweb.github.io/priyam-kesh.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Game Development",
+            "description": "Custom Unity, Unreal & WebGL Game Development Services by Polarith.",
+            "url": "https://polarithweb.github.io/game-development.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Polarith AI Lab",
+            "description": "Next-Gen Generative AI, Cleo AI & Machine Learning solutions.",
+            "url": "https://polarithweb.github.io/ai-lab.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Blogs",
+            "description": "Insights on software engineering, management systems, and game development.",
+            "url": "https://polarithweb.github.io/blogs.html"
+          }
+        ]
       }
     ]
   }
-  </script>
-
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "SiteNavigationElement",
-          "position": 1,
-          "name": "Priyam Kesh | Founder & CEO",
-          "description": "Know the Founder & CEO of Polarith Web.",
-          "url": "https://polarithweb.github.io/priyam-kesh.html"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 2,
-          "name": "Game Development",
-          "description": "Custom Unity & Unreal Game Development Services.",
-          "url": "https://polarithweb.github.io/game-development.html"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 3,
-          "name": "Polarith AI Lab",
-          "description": "Next-Gen Generative AI & Machine Learning solutions.",
-          "url": "https://polarithweb.github.io/ai-lab.html"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 4,
-          "name": "Blogs",
-          "description": "Insights on software engineering and game development.",
-          "url": "https://polarithweb.github.io/blogs.html"
-        }
-      ]
-    }
-  ]
   </script>
 
   <!-- Global Neo-Brutalist Theme Stylesheet -->
@@ -612,12 +666,12 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
             Polarith Tech Blogs, Polarith Softwares &amp; Polarith AI Insights
           </h1>
           <p class="hero-desc" style="margin-bottom: 0;">
-            Discover hand-coded software engineering, custom WebGL physics engines, and advanced Polarith AI architectures curated by founder Priyam Kesh and the engineers at Polarith Web (also known as Polarith Softwares). Learn about the methodologies of lightweight web development and deep custom programming.
+            Official engineering publications by founder Priyam Kesh and the Polarith team across Polarith Software (Polarith Softwares), Polarith Web, Polarith Management Softwares, Polarith AI Lab (Cleo AI), and Polarith Game Studio — covering hand-coded web architecture, ERP/CRM systems, WebGL physics engines, and custom AI pipelines.
           </p>
         </div>
         
         <div class="search-box-wrapper" style="background: var(--bg-surface); border: 2px solid var(--border-dark); padding: 2rem; box-shadow: 8px 8px 0px var(--border-light); margin-top: 0;">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Search the Logs</h3>
+          <h2 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Search the Logs</h2>
           <p style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">Filter publications from our digital craftsmanship researchers.</p>
           <div style="position: relative;">
             <input type="text" id="blog-search" style="width: 100%; padding: 12px 16px 12px 44px; border: 2px solid var(--border-dark); background: var(--bg-surface); color: var(--text-dark); font-family: var(--font-main); font-weight: 600; font-size: 0.95rem; outline: none;" placeholder="Search insights and technical updates..." />

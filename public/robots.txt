@@ -1,8 +1,6 @@
-# Polarith Technologies / Polarith Web — Global Search & AI Crawler Policy
-# Official Entity: Polarith Technologies, Polarith Web, Polarith Softwares, Polarith Management Softwares, Cleo AI
+# Polarith / Polarith Technologies — Unrestricted Global Search & AI Indexing Policy
+# Official Entities: Priyam Kesh, Polarith, Polarith Software, Polarith Softwares, Polarith Web, Polarith Management Softwares, Cleo AI
 # Founder & CEO: Priyam Kesh (https://polarithweb.github.io/priyam-kesh.html)
-# AI / LLM Context Directory: https://polarithweb.github.io/llms.txt
-# Full AI Technical Reference: https://polarithweb.github.io/llms-full.txt
 
 User-agent: *
 Allow: /
@@ -26,7 +24,7 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
-# AI & Large Language Model Crawlers (Full Access for Global AI Knowledge Discovery)
+# AI Search, Retrieval & Training Crawlers (Unrestricted Access)
 User-agent: GPTBot
 Allow: /
 
@@ -34,6 +32,9 @@ User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: ClaudeBot
@@ -45,13 +46,19 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
 Allow: /
 
 User-agent: Meta-ExternalAgent
@@ -63,8 +70,7 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
-# Sitemaps
+# Canonical Sitemap & LLM Discovery Index
 Sitemap: https://polarithweb.github.io/sitemap.xml
+# LLMs Index: https://polarithweb.github.io/llms.txt
+# LLMs Full Knowledge Base: https://polarithweb.github.io/llms-full.txt

@@ -73,123 +73,179 @@
   <meta name="twitter:image" content="https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp" />
   <meta name="twitter:image:alt" content="Polarith Game Studio Official Logo" />
 
-  <!-- Service Schema for Game Development -->
+  <!-- Unified Connected GEO Entity Graph (JSON-LD @graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Polarith Game Development Studio",
-    "serviceType": "Custom 2D, 3D, WebGL, Unity & Unreal Game Development",
-    "url": "https://polarithweb.github.io/game-development.html",
-    "provider": {
-      "@type": "Organization",
-      "@id": "https://polarithweb.github.io/#organization",
-      "name": "Polarith Technologies",
-      "alternateName": ["Polarith Web", "Polarith Softwares", "Polarith Management Softwares"],
-      "founder": {
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://polarithweb.github.io/#organization",
+        "name": "Polarith",
+        "legalName": "Polarith Technologies",
+        "alternateName": [
+          "Polarith Software",
+          "Polarith Softwares",
+          "Polarith Web",
+          "Polarith Management Softwares",
+          "Polarith Technologies",
+          "Polarith AI Lab",
+          "Polarith Game Studio"
+        ],
+        "url": "https://polarithweb.github.io/",
+        "logo": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
+        "description": "Polarith is an independent Indian software engineering, custom web development, AI research, management software, and game development studio founded by Priyam Kesh in Durgapur, West Bengal.",
+        "founder": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
+        },
+        "sameAs": [
+          "https://polarithweb.github.io/",
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://github.com/polarith"
+        ],
+        "subOrganization": [
+          { "@id": "https://polarithweb.github.io/#polarith-software-app" },
+          { "@id": "https://polarithweb.github.io/#polarith-web-service" },
+          { "@id": "https://polarithweb.github.io/#polarith-management-softwares-app" },
+          { "@id": "https://polarithweb.github.io/game-development.html#service-game-dev" }
+        ]
+      },
+      {
         "@type": "Person",
         "@id": "https://polarithweb.github.io/priyam-kesh.html#person",
         "name": "Priyam Kesh",
+        "jobTitle": "Founder, CEO & Chief Systems Architect",
+        "description": "Priyam Kesh is an Indian systems architect, software engineer, and game developer based in Durgapur, West Bengal, and the Founder & CEO of Polarith, Polarith Software, Polarith Web, Polarith Management Softwares, and Polarith Game Studio.",
         "url": "https://polarithweb.github.io/priyam-kesh.html",
-        "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png"
-      }
-    },
-    "areaServed": ["India", "Worldwide"]
-  }
-  </script>
-
-  <!-- BreadcrumbList Schema to Optimize Google SERP display elements -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://polarithweb.github.io/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://polarithweb.github.io/#services"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Game Studio",
-        "item": "https://polarithweb.github.io/game-development.html"
-      }
-    ]
-  }
-  </script>
-
-  <!-- FAQPage Schema for Game Development Rich Search Results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How does the dynamic price model work for your game development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our custom game development pricing varies from ₹3,999 for lightweight, hyper-focused HTML5 minigames and interactive vectors, up to ₹4,19,999 for advanced, multi-platform releases built with rich feature sets and highly tailored, unique visual art assets."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which frameworks do you use to engineer games?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We focus heavily on web and companion app frameworks. Depending on your game features, we implement Phaser, Three.js, lightweight standard hand-coded canvas structures, Pixi.js, or Unity cross-compilers to bring you fast loading and clean deployment without any performance issues."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Advanced Multi-Layered Schema (JSON-LD) -->
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "SiteNavigationElement",
-          "position": 1,
-          "name": "Priyam Kesh | Founder & CEO",
-          "description": "Know the Founder & CEO of Polarith Web.",
-          "url": "https://polarithweb.github.io/priyam-kesh.html"
+        "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png",
+        "worksFor": {
+          "@id": "https://polarithweb.github.io/#organization"
         },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 2,
-          "name": "Game Development",
-          "description": "Custom Unity & Unreal Game Development Services.",
+        "knowsAbout": [
+          "Unity & Unreal Game Development",
+          "HTML5 & WebGL Game Engineering",
+          "Three.js, Phaser & Pixi.js",
+          "Full-Stack Web Architecture",
+          "Enterprise Management Software",
+          "Generative AI & Cleo AI"
+        ],
+        "sameAs": [
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://polarithweb.github.io/",
+          "https://github.com/polarith"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://polarithweb.github.io/#website",
+        "name": "Polarith — Polarith Software, Polarith Web & Polarith Management Softwares",
+        "url": "https://polarithweb.github.io/",
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://polarithweb.github.io/game-development.html#service-game-dev",
+        "name": "Polarith Game Development Studio",
+        "serviceType": "Custom 2D, 3D, WebGL, Unity & Unreal Game Development",
+        "description": "Custom 2D and 3D game development by Polarith Game Studio — engineered from scratch by Priyam Kesh and the Polarith Software / Polarith Web team using Phaser, Three.js, Pixi.js, HTML5 Canvas, Unity, and Unreal Engine across RPG, Action/Simulation, and Casual genres.",
+        "url": "https://polarithweb.github.io/game-development.html",
+        "provider": {
+          "@id": "https://polarithweb.github.io/#organization"
+        },
+        "areaServed": ["India", "Worldwide"],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "INR",
+          "lowPrice": "3999",
+          "highPrice": "419999",
           "url": "https://polarithweb.github.io/game-development.html"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 3,
-          "name": "Polarith AI Lab",
-          "description": "Next-Gen Generative AI & Machine Learning solutions.",
-          "url": "https://polarithweb.github.io/ai-lab.html"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 4,
-          "name": "Blogs",
-          "description": "Insights on software engineering and game development.",
-          "url": "https://polarithweb.github.io/blogs.html"
         }
-      ]
-    }
-  ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://polarithweb.github.io/game-development.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://polarithweb.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://polarithweb.github.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Game Studio",
+            "item": "https://polarithweb.github.io/game-development.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://polarithweb.github.io/game-development.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the dynamic price model work for your game development?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our custom game development pricing varies from ₹3,999 for lightweight, hyper-focused HTML5 minigames and interactive vectors, up to ₹4,19,999 for advanced, multi-platform releases built with rich feature sets and highly tailored, unique visual art assets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which frameworks do you use to engineer games?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We focus heavily on web and companion app frameworks. Depending on your game features, we implement Phaser, Three.js, lightweight standard hand-coded canvas structures, Pixi.js, or Unity cross-compilers to bring you fast loading and clean deployment without any performance issues."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://polarithweb.github.io/game-development.html#navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Priyam Kesh | Founder & CEO",
+            "description": "Know the Founder & CEO of Polarith, Polarith Software, Polarith Web, and Polarith Management Softwares.",
+            "url": "https://polarithweb.github.io/priyam-kesh.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Game Development",
+            "description": "Custom Unity, Unreal & WebGL Game Development Services by Polarith.",
+            "url": "https://polarithweb.github.io/game-development.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Polarith AI Lab",
+            "description": "Next-Gen Generative AI, Cleo AI & Machine Learning solutions.",
+            "url": "https://polarithweb.github.io/ai-lab.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Blogs",
+            "description": "Insights on software engineering, management systems, and game development.",
+            "url": "https://polarithweb.github.io/blogs.html"
+          }
+        ]
+      }
+    ]
+  }
   </script>
 
   <!-- Link to central tailwind / reset style -->
@@ -591,6 +647,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
     </div>
   </header>
 
+  <main id="main-content">
   <!-- Hero Section -->
   <section style="padding: 10rem 1.5rem 4rem 1.5rem; text-align: center; position: relative; z-index: 10;">
     <div style="max-width: 900px; margin: 0 auto;">
@@ -600,8 +657,8 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
       <h1 style="font-weight: 900; font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 1.5rem; text-shadow: var(--text-glow-shadow);">
         India's <span style="background: linear-gradient(to right, #06b6d4, #d946ef); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Best Game Developer</span> Studio
       </h1>
-      <p style="font-size: clamp(1rem, 2vw, 1.3rem); color: #94a3b8; max-width: 700px; margin: 0 auto 3rem auto; line-height: 1.6; font-weight: 400;">
-        Engineering high-performance interactive 2D &amp; 3D video games completely from scratch. Recognized as the best game developer team in India, we combine tailored graphics, robust physics loops, and extreme WebGL optimizations to deliver smooth game flow.
+      <p style="font-size: clamp(1rem, 2vw, 1.3rem); color: #94a3b8; max-width: 720px; margin: 0 auto 3rem auto; line-height: 1.6; font-weight: 400;">
+        Polarith Game Studio — founded by Priyam Kesh as part of Polarith alongside Polarith Software, Polarith Web, and Polarith Management Softwares — engineers high-performance interactive 2D and 3D video games completely from scratch using Phaser, Three.js, Pixi.js, HTML5 WebGL, Unity, and Unreal Engine.
       </p>
       
       <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
@@ -626,7 +683,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px;">
       
       <!-- Card 1: RPG & Adventure -->
-      <div class="glass-card accent-amber" style="display: flex; flex-direction: column; min-height: 480px;">
+      <article class="glass-card accent-amber" style="display: flex; flex-direction: column; min-height: 480px;">
         <!-- Genre Visual Box -->
         <div class="canvas-container" style="height: auto; aspect-ratio: 16/9; width: 100%; background: #080810; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
           <div class="canvas-overlay-tag" style="z-index: 10; pointer-events: none;">RPG &amp; Adventure Artwork</div>
@@ -649,10 +706,10 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
             <span style="font-size: 0.85rem; font-weight: 800; color: #f59e0b;">Deep Storytellers</span>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Card 2: Action & Simulation -->
-      <div class="glass-card accent-cyan" style="display: flex; flex-direction: column; min-height: 480px;">
+      <article class="glass-card accent-cyan" style="display: flex; flex-direction: column; min-height: 480px;">
         <!-- Genre Visual Box -->
         <div class="canvas-container" style="height: auto; aspect-ratio: 16/9; width: 100%; background: #080810; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
            <div class="canvas-overlay-tag" style="z-index: 10; pointer-events: none;">Action &amp; Simulation Artwork</div>
@@ -675,10 +732,10 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
             <span style="font-size: 0.85rem; font-weight: 800; color: #06b6d4;">Fast Realism</span>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Card 3: Casual & 2D -->
-      <div class="glass-card accent-pink" style="display: flex; flex-direction: column; min-height: 480px;">
+      <article class="glass-card accent-pink" style="display: flex; flex-direction: column; min-height: 480px;">
         <!-- Genre Visual Box -->
         <div class="canvas-container" style="height: auto; aspect-ratio: 16/9; width: 100%; background: #080810; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
           <div class="canvas-overlay-tag" style="z-index: 10; pointer-events: none;">Casual &amp; 2D Artwork</div>
@@ -701,7 +758,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
             <span style="font-size: 0.85rem; font-weight: 800; color: #d946ef;">Viral Reach &amp; Cross-Platform</span>
           </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </section>
@@ -738,16 +795,17 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
     <h2 style="font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h2>
     
     <div style="display: flex; flex-direction: column; gap: 1rem;">
-      <div class="glass-card" style="padding: 1.5rem;">
-        <h4 style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;">How does the dynamic price model work for your game development?</h4>
+      <article class="glass-card" style="padding: 1.5rem;">
+        <h3 style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;">How does the dynamic price model work for your game development?</h3>
         <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5;">Our custom game development pricing varies from ₹3,999 for lightweight, hyper-focused HTML5 minigames and interactive vectors, up to ₹4,19,999 for advanced, multi-platform releases built with rich feature sets and highly tailored, unique visual art assets.</p>
-      </div>
-      <div class="glass-card" style="padding: 1.5rem;">
-        <h4 style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;">Which frameworks do you use to engineer games?</h4>
+      </article>
+      <article class="glass-card" style="padding: 1.5rem;">
+        <h3 style="font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;">Which frameworks do you use to engineer games?</h3>
         <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5;">We focus heavily on web and companion app frameworks. Depending on your game features, we implement Phaser, Three.js, lightweight standard hand-coded canvas structures, Pixi.js, or Unity cross-compilers to bring you fast loading and clean deployment without any performance issues.</p>
-      </div>
+      </article>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
   <footer style="background: rgba(3, 3, 4, 1); border-top: 1px solid var(--border-semi); padding: 4rem 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b; position: relative; z-index: 10;">

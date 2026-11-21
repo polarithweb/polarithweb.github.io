@@ -68,138 +68,212 @@
   <meta name="twitter:image" content="https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp" />
   <meta name="twitter:image:alt" content="Polarith AI Lab &amp; Polarith Technologies Official Emblem" />
 
-  <!-- WebPage & Research Division Schema -->
+  <!-- Unified Connected GEO Entity Graph (JSON-LD @graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://polarithweb.github.io/ai-lab.html#webpage",
-    "name": "Polarith AI Lab – Polarith Technologies & Cleo AI",
-    "url": "https://polarithweb.github.io/ai-lab.html",
-    "description": "Cutting-edge generative AI, Cleo AI cognitive engines, custom machine learning pipelines, and intelligent automation powering Polarith Softwares and Polarith Management Softwares.",
-    "author": {
-      "@type": "Person",
-      "@id": "https://polarithweb.github.io/priyam-kesh.html#person",
-      "name": "Priyam Kesh",
-      "url": "https://polarithweb.github.io/priyam-kesh.html",
-      "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://polarithweb.github.io/#organization",
-      "name": "Polarith Technologies",
-      "alternateName": ["Polarith Web", "Polarith Softwares", "Polarith Management Softwares", "Polarith AI Lab"],
-      "logo": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp"
-    },
-    "breadcrumb": { "@id": "https://polarithweb.github.io/ai-lab.html#breadcrumb" }
-  }
-  </script>
-
-  <!-- Breadcrumb Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "@id": "https://polarithweb.github.io/ai-lab.html#breadcrumb",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://polarithweb.github.io/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://polarithweb.github.io/#services"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "AI Lab",
-        "item": "https://polarithweb.github.io/ai-lab.html"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "SiteNavigationElement",
-          "position": 1,
-          "name": "Priyam Kesh | Founder & CEO",
-          "description": "Know the Founder & CEO of Polarith Web.",
-          "url": "https://polarithweb.github.io/priyam-kesh.html"
+        "@type": "Organization",
+        "@id": "https://polarithweb.github.io/#organization",
+        "name": "Polarith",
+        "legalName": "Polarith Technologies",
+        "alternateName": [
+          "Polarith Software",
+          "Polarith Softwares",
+          "Polarith Web",
+          "Polarith Management Softwares",
+          "Polarith Technologies",
+          "Polarith AI Lab",
+          "Polarith Game Studio"
+        ],
+        "url": "https://polarithweb.github.io/",
+        "logo": "https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp",
+        "description": "Polarith is an independent Indian software engineering, custom web development, AI research, and management software organization founded by Priyam Kesh in Durgapur, West Bengal, operating Polarith Software, Polarith Web, Polarith Management Softwares, Polarith AI Lab (Cleo AI), and Polarith Game Studio.",
+        "founder": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
         },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 2,
-          "name": "Game Development",
-          "description": "Custom Unity & Unreal Game Development Services.",
-          "url": "https://polarithweb.github.io/game-development.html"
+        "sameAs": [
+          "https://polarithweb.github.io/",
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://github.com/polarith"
+        ],
+        "subOrganization": [
+          { "@id": "https://polarithweb.github.io/#polarith-software-app" },
+          { "@id": "https://polarithweb.github.io/#polarith-web-service" },
+          { "@id": "https://polarithweb.github.io/#polarith-management-softwares-app" },
+          { "@id": "https://polarithweb.github.io/ai-lab.html#cleo-ai" }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://polarithweb.github.io/priyam-kesh.html#person",
+        "name": "Priyam Kesh",
+        "jobTitle": "Founder, CEO & Chief Systems Architect",
+        "description": "Priyam Kesh is an Indian systems architect, software engineer, AI researcher, and student entrepreneur based in Durgapur, West Bengal, and the Founder & CEO of Polarith, Polarith Software, Polarith Web, Polarith Management Softwares, and Polarith AI Lab (Cleo AI).",
+        "url": "https://polarithweb.github.io/priyam-kesh.html",
+        "image": "https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png",
+        "worksFor": {
+          "@id": "https://polarithweb.github.io/#organization"
         },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 3,
-          "name": "Polarith AI Lab",
-          "description": "Next-Gen Generative AI & Machine Learning solutions.",
-          "url": "https://polarithweb.github.io/ai-lab.html"
+        "knowsAbout": [
+          "Generative AI",
+          "Cleo AI",
+          "Custom Large Language Models",
+          "Retrieval-Augmented Generation (RAG)",
+          "Full-Stack Web Architecture",
+          "Enterprise Management Software",
+          "ERP & CRM Systems",
+          "Game Engineering"
+        ],
+        "sameAs": [
+          "https://polarithweb.github.io/priyam-kesh.html",
+          "https://polarithweb.github.io/",
+          "https://github.com/polarith"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://polarithweb.github.io/#website",
+        "name": "Polarith — Polarith Software, Polarith Web & Polarith Management Softwares",
+        "url": "https://polarithweb.github.io/",
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
         },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 4,
-          "name": "Blogs",
-          "description": "Insights on software engineering and game development.",
-          "url": "https://polarithweb.github.io/blogs.html"
-        }
-      ]
-    }
-  ]
-  </script>
-
-  <!-- FAQPage Schema for Dominating Search Snippets -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+        "inLanguage": "en-US"
+      },
       {
-        "@type": "Question",
-        "name": "Who is the founder of Polarith AI and Polarith Softwares?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Polarith AI Lab and Polarith Softwares were founded and are led by Priyam Kesh, India's elite systems architect, software developer, and student entrepreneur based in Durgapur, West Bengal. Under his technical leadership, Polarith Web designs and deploys robust, high-performance, hand-coded applications, custom neural architectures, and enterprise-grade mobile apps with a 100% focus on zero-trust security and data privacy."
+        "@type": "SoftwareApplication",
+        "@id": "https://polarithweb.github.io/ai-lab.html#cleo-ai",
+        "name": "Cleo AI – Polarith AI Lab",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web, Cloud, Linux, Cross-Platform",
+        "url": "https://polarithweb.github.io/ai-lab.html",
+        "description": "Custom generative AI engines, fine-tuned LLMs, RAG pipelines, semantic search, and intelligent automation researched and built from scratch by Priyam Kesh and Polarith AI Lab to power Polarith Software, Polarith Web, and Polarith Management Softwares.",
+        "creator": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
+        },
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
         }
       },
       {
-        "@type": "Question",
-        "name": "What custom services do Priyam Kesh and Polarith Softwares offer in India?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Polarith Softwares, spearheaded by Priyam Kesh, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android & iOS mobile applications, high-performance game engineering (using Unity & Unreal Engines), and bespoke artificial intelligence integrations through the Polarith AI Lab. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms."
+        "@type": "WebPage",
+        "@id": "https://polarithweb.github.io/ai-lab.html#webpage",
+        "name": "Polarith AI Lab – Polarith Technologies & Cleo AI",
+        "url": "https://polarithweb.github.io/ai-lab.html",
+        "description": "Cutting-edge generative AI, Cleo AI cognitive engines, custom machine learning pipelines, and intelligent automation powering Polarith Software, Polarith Softwares, Polarith Web, and Polarith Management Softwares.",
+        "isPartOf": {
+          "@id": "https://polarithweb.github.io/#website"
+        },
+        "mainEntity": {
+          "@id": "https://polarithweb.github.io/ai-lab.html#cleo-ai"
+        },
+        "author": {
+          "@id": "https://polarithweb.github.io/priyam-kesh.html#person"
+        },
+        "publisher": {
+          "@id": "https://polarithweb.github.io/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://polarithweb.github.io/ai-lab.html#breadcrumb"
         }
       },
       {
-        "@type": "Question",
-        "name": "What makes Polarith AI different from generic AI companies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "At Polarith AI, we reject typical off-the-shelf APIs and generic SaaS builders. Under the technical guidance of Priyam Kesh, our team specializes in building mathematically precise, lightweight machine learning algorithms and neural pipelines natively from scratch. This guarantees absolute data isolation, extreme low-latency processing, zero-trust backend infrastructure, and perfect Lighthouse/Core Web Vitals scores for our business clients in India and worldwide."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://polarithweb.github.io/ai-lab.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://polarithweb.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://polarithweb.github.io/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI Lab",
+            "item": "https://polarithweb.github.io/ai-lab.html"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "How can I hire Polarith Web or consult with Priyam Kesh?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can consult with Priyam Kesh and the elite engineering team at Polarith Web (also operating as Polarith Softwares) by exploring our official website at polarithweb.github.io. We welcome inquiries regarding enterprise custom software architectures, native mobile apps, and custom machine learning pipelines built to secure cloud databases."
-        }
+        "@type": "FAQPage",
+        "@id": "https://polarithweb.github.io/ai-lab.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is the founder of Polarith AI and Polarith Softwares?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polarith AI Lab and Polarith Softwares were founded and are led by Priyam Kesh, India's elite systems architect, software developer, and student entrepreneur based in Durgapur, West Bengal. Under his technical leadership, Polarith Web designs and deploys robust, high-performance, hand-coded applications, custom neural architectures, and enterprise-grade mobile apps with a 100% focus on zero-trust security and data privacy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What custom services do Priyam Kesh and Polarith Softwares offer in India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polarith Softwares, spearheaded by Priyam Kesh, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android & iOS mobile applications, high-performance game engineering (using Unity & Unreal Engines), and bespoke artificial intelligence integrations through the Polarith AI Lab. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes Polarith AI different from generic AI companies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At Polarith AI, we reject typical off-the-shelf APIs and generic SaaS builders. Under the technical guidance of Priyam Kesh, our team specializes in building mathematically precise, lightweight machine learning algorithms and neural pipelines natively from scratch. This guarantees absolute data isolation, extreme low-latency processing, zero-trust backend infrastructure, and perfect Lighthouse/Core Web Vitals scores for our business clients in India and worldwide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I hire Polarith Web or consult with Priyam Kesh?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can consult with Priyam Kesh and the elite engineering team at Polarith Web (also operating as Polarith Softwares) by exploring our official website at polarithweb.github.io. We welcome inquiries regarding enterprise custom software architectures, native mobile apps, and custom machine learning pipelines built to secure cloud databases."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://polarithweb.github.io/ai-lab.html#navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Priyam Kesh | Founder & CEO",
+            "description": "Know the Founder & CEO of Polarith, Polarith Software, Polarith Web, and Polarith Management Softwares.",
+            "url": "https://polarithweb.github.io/priyam-kesh.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Game Development",
+            "description": "Custom Unity, Unreal & WebGL Game Development Services by Polarith.",
+            "url": "https://polarithweb.github.io/game-development.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Polarith AI Lab",
+            "description": "Next-Gen Generative AI, Cleo AI & Machine Learning solutions.",
+            "url": "https://polarithweb.github.io/ai-lab.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Blogs",
+            "description": "Insights on software engineering, management systems, and game development.",
+            "url": "https://polarithweb.github.io/blogs.html"
+          }
+        ]
       }
     ]
   }
@@ -694,12 +768,13 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
     </div>
   </header>
 
+  <main id="main-content">
   <!-- Hero Title Section -->
   <section class="hero-sec">
     <div class="container">
       <h1 class="hero-title">Polarith AI Lab</h1>
       <p class="hero-desc">
-        The machine learning research and systems division of Polarith Web and Polarith Softwares, founded by Priyam Kesh. Designing the bleeding edge of custom-tailored intelligence engines, automated neural pipelines, and interactive deep learning solutions engineered completely from scratch.
+        Polarith AI Lab is the machine learning and generative AI research division of Polarith — spanning Polarith Software (Polarith Softwares), Polarith Web, and Polarith Management Softwares — founded and led by Priyam Kesh. The lab engineers Cleo AI cognitive engines, custom LLM and RAG pipelines, and automated neural architectures completely from scratch.
       </p>
     </div>
   </section>
@@ -731,9 +806,9 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
       <h2 style="font-family: var(--font-main); font-size: 2rem; font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; text-align: center; letter-spacing: -0.02em;">
         India's Elite Custom AI Developer &amp; Machine Learning Engineers
       </h2>
-      <div style="font-family: var(--font-main); font-size: 1rem; line-height: 1.7; color: var(--text-gray); display: flex; flex-direction: column; gap: 1.25rem;">
+      <article style="font-family: var(--font-main); font-size: 1rem; line-height: 1.7; color: var(--text-gray); display: flex; flex-direction: column; gap: 1.25rem;">
         <p>
-          As the premier <strong style="color: #ffffff; text-decoration: underline; text-decoration-color: var(--sky-glow);">AI developer in India</strong>, Polarith AI Lab (engineered by <strong>Polarith Softwares</strong> and the digital systems division of <strong>Polarith Web</strong> under the leadership of founder <strong>Priyam Kesh</strong>) is at the global forefront of digital transformation, bridging the gap between business objectives and complex neural architectures. We reject bloated, off-the-shelf APIs in favor of bespoke, highly optimized machine learning models engineered entirely from scratch.
+          As the premier <strong style="color: #ffffff; text-decoration: underline; text-decoration-color: var(--sky-glow);">AI developer in India</strong>, Polarith AI Lab — part of <strong>Polarith</strong> alongside <strong>Polarith Software</strong> (<strong>Polarith Softwares</strong>), <strong>Polarith Web</strong>, and <strong>Polarith Management Softwares</strong> under founder <strong>Priyam Kesh</strong> — builds bespoke, highly optimized machine learning models and Cleo AI intelligence engines engineered entirely from scratch rather than bloated off-the-shelf API wrappers.
         </p>
         <p>
           Whether you require custom fine-tuned Large Language Models (LLMs), intelligent semantic search engines, high-throughput automated computer vision systems, or smart agent workflows, our researchers construct reliable backbones with extreme mathematical precision. Each project is fully hand-coded to guarantee maximum privacy, minimum latency, and perfect performance scores.
@@ -741,7 +816,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
         <p style="font-style: italic; font-size: 0.95rem; color: #bae6fd; text-align: center;">
           ✦ Handcrafted by Priyam Kesh with a 100% focus on data security, zero-trust backend authorization, and seamless cloud database syncing.
         </p>
-      </div>
+      </article>
 
       <!-- FAQ Accordion section -->
       <div class="faq-container">
@@ -762,7 +837,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
         <details class="faq-item">
           <summary class="faq-question">What custom services do Priyam Kesh and Polarith Softwares offer in India?</summary>
           <div class="faq-answer">
-            <strong>Polarith Softwares</strong>, spearheaded by <strong>Priyam Kesh</strong>, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android & iOS mobile applications, high-performance game engineering (using Unity & Unreal Engines), and bespoke artificial intelligence integrations through the <strong>Polarith AI Lab</strong>. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms.
+            <strong>Polarith Softwares</strong>, spearheaded by <strong>Priyam Kesh</strong>, offers an array of high-performance custom digital services. These include custom full-stack web architectures, native Android &amp; iOS mobile applications, high-performance game engineering (using Unity &amp; Unreal Engines), and bespoke artificial intelligence integrations through the <strong>Polarith AI Lab</strong>. We construct custom Large Language Models (LLMs), semantic search, and RAG pipelines entirely from scratch, avoiding bloated third-party template platforms.
           </div>
         </details>
 
@@ -782,6 +857,7 @@ if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
       </div>
     </div>
   </section>
+  </main>
 
   <!-- Glass Footer -->
   <footer>

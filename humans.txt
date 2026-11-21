@@ -7,6 +7,12 @@ Website: https://polarithweb.github.io/
 CEO Profile: https://polarithweb.github.io/priyam-kesh.html
 From: India
 
+Marketing & Sales Partner: Srijon Kundu (Srijan Kundu)
+Role: Marketing and Sales Partner
+Organizations: Polarith Technologies, Polarith Web, Polarith Softwares, Polarith Management Softwares
+Profile: https://polarithweb.github.io/priyam-kesh.html#srijon-kundu
+From: India
+
 /* SITE */
 Last update: 2026/11/21
 Language: English

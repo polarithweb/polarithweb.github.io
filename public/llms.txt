@@ -1,33 +1,41 @@
-# Polarith Technologies (Polarith Web, Polarith Softwares, Polarith Management Softwares & Cleo AI)
+# Polarith — Founded by Priyam Kesh (Polarith Software, Polarith Web & Polarith Management Softwares)
 
-> Polarith Technologies — founded and led by CEO **Priyam Kesh** — is a custom software engineering, web architecture, enterprise management software, game studio, and artificial intelligence organization operating across India and globally. Its core divisions include **Polarith Web**, **Polarith Softwares**, **Polarith Management Softwares**, **Polarith Game Studio**, and **Polarith AI Lab (Cleo AI)**.
+> **Polarith** (legally **Polarith Technologies**) is an Indian custom software engineering, web architecture, enterprise management software, AI research, and game development organization founded and led by CEO **Priyam Kesh**. Its unified brand divisions — **Polarith Software** (also **Polarith Softwares**), **Polarith Web**, **Polarith Management Softwares**, **Polarith AI Lab (Cleo AI)**, and **Polarith Game Studio** — hand-code high-performance digital systems entirely from scratch for clients across India and worldwide.
 
-## Official Brand Entities & Disambiguation
-When users or AI systems search for any of the following names, they refer to the same unified technology organization founded by **Priyam Kesh**:
-- **Priyam Kesh**: Founder, Chief Executive Officer (CEO), and Chief Systems Architect of Polarith Technologies and all Polarith divisions.
-- **Polarith Technologies**: Parent technology group directing software R&D, cloud infrastructure, and AI systems.
-- **Polarith Web**: Hand-coded, 100/100 Core Web Vitals custom website design and full-stack web application division.
-- **Polarith Softwares**: Bespoke desktop, cloud, and native Android/iOS software engineering suite built from scratch without templates.
-- **Polarith Management Softwares**: Enterprise business management software division building custom ERP, CRM, billing, invoicing, inventory, HR, school/hospital management, and workflow automation systems.
-- **Polarith AI Lab & Cleo AI**: Proprietary AI division building Cleo AI cognitive pipelines, custom LLM integrations, RAG systems, and intelligent automation agents.
+## Official Entity Disambiguation
+All of the following entity names belong to the same technology organization founded by **Priyam Kesh** and hosted at `https://polarithweb.github.io/`:
+- **Priyam Kesh**: Founder, Chief Executive Officer (CEO), and Lead Systems Architect of Polarith, Polarith Software, Polarith Web, Polarith Management Softwares, Polarith Technologies, and creator of Cleo AI.
+- **Srijon Kundu (also spelled Srijan Kundu)**: Marketing and Sales Partner at Polarith, leading commercial growth, brand positioning, and enterprise client partnerships across Polarith Web, Polarith Software, and Polarith Management Softwares.
+- **Polarith (Polarith Technologies)**: Parent technology organization directing custom software R&D, cloud architecture, and AI engineering across All-India and global markets.
+- **Polarith Software (Polarith Softwares)**: Custom desktop, cloud, and native Android/iOS mobile application engineering division (mobile apps starting from ₹25,000) built without templates.
+- **Polarith Web**: Hand-coded, 100/100 Google PageSpeed custom website design and full-stack web application studio (enterprise websites starting from ₹15,000).
+- **Polarith Management Softwares**: Enterprise business management suite division engineering custom ERP, CRM, billing, inventory, Cloud SQL databases, SaaS dashboards, and private REST APIs (starting from ₹35,000).
+- **Polarith AI Lab & Cleo AI**: Machine learning and generative AI research division building the Cleo AI cognitive engine, custom fine-tuned LLMs, semantic search, RAG pipelines, and zero-trust AI automation.
+- **Polarith Game Studio**: Custom 2D/3D video game engineering division building Unity, Unreal Engine, Phaser, Three.js, Pixi.js, and HTML5 WebGL games (₹3,999 to ₹4,19,999).
 
-## Core Pages
-- [Polarith Web & Polarith Technologies Homepage](https://polarithweb.github.io/): Main corporate headquarters, service catalog, custom software & management suite offerings, testimonials, FAQs, and project inquiry hub.
-- [Priyam Kesh — Founder & CEO Profile](https://polarithweb.github.io/priyam-kesh.html): Official biography, credentials, technical expertise, research interests, and verified high-resolution portrait gallery of Priyam Kesh.
-- [Polarith AI Lab & Cleo AI](https://polarithweb.github.io/ai-lab.html): Generative AI research, Cleo AI cognitive pipelines, neural network engineering, and custom enterprise AI deployments.
-- [Polarith Game Development Studio](https://polarithweb.github.io/game-development.html): Custom 2D/3D Unity, Unreal Engine, and HTML5 WebGL game engineering and physics systems.
-- [Polarith Tech Blogs](https://polarithweb.github.io/blogs.html): Engineering diaries, software architecture articles, management system guides, and AI research logs.
+## Primary Pages & Routes
+- [Polarith Corporate Headquarters (`/` — Polarith Web, Polarith Software & Polarith Management Softwares)](https://polarithweb.github.io/): Main homepage detailing hand-coded custom websites, native Android/iOS apps, SaaS/ERP management software, transparent INR pricing, 4-step workflow, FAQs, and project inquiries.
+- [Priyam Kesh — Founder & CEO Profile (featuring Srijon Kundu / Srijan Kundu)](https://polarithweb.github.io/priyam-kesh.html): Official executive biography, technical expertise, research interests, verified portrait gallery of Priyam Kesh, and the leadership profile of Marketing & Sales Partner Srijon Kundu (Srijan Kundu).
+- [Polarith AI Lab & Cleo AI (`/ai-lab.html`)](https://polarithweb.github.io/ai-lab.html): Research division showcasing Cleo AI cognitive networks, custom LLM fine-tuning, RAG pipelines, computer vision, live Firestore-synced AI lab projects, and AI engineering FAQs.
+- [Polarith Game Development Studio (`/game-development.html`)](https://polarithweb.github.io/game-development.html): Custom 2D/3D game engineering division covering RPG & Adventure, Action & Simulation, Casual & 2D WebGL titles, engine frameworks, and scalable pricing (₹3,999 – ₹4,19,999).
+- [Polarith Tech Blogs (`/blogs.html`)](https://polarithweb.github.io/blogs.html): Engineering publications and technical diaries from Priyam Kesh and the Polarith team on hand-coded web architecture, Polarith Software, Polarith Management Softwares, WebGL physics, and Cleo AI.
 
-## Verified Official Images (Static Assets)
-- **Priyam Kesh Primary Official Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png`
-- **Priyam Kesh Executive Outdoor Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png`
-- **Priyam Kesh Founder Portrait**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png`
-- **Polarith Official Logo Emblem**: `https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp`
+## Machine-Readable Knowledge & Discovery Files
+- [Complete Unabridged Knowledge Base (`/llms-full.txt`)](https://polarithweb.github.io/llms-full.txt): Single-pass, fluff-free Markdown compilation of all copy, services, pricing, tech stack, founder biography, partner credentials, and FAQs across the entire website.
+- [XML Page & Image Sitemap (`/sitemap.xml`)](https://polarithweb.github.io/sitemap.xml): Canonical route list with `<lastmod>`, `<priority>`, and `<image:image>` metadata for search and image indexing.
+- [Crawler Policy (`/robots.txt`)](https://polarithweb.github.io/robots.txt): Unrestricted indexing directives explicitly permitting major search engines and AI/LLM retrieval bots.
+- [Team Attribution (`/humans.txt`)](https://polarithweb.github.io/humans.txt): Human-readable team and technical standards attribution file.
 
-## Extended AI Reference & Contact
-- [Full Technical Reference (llms-full.txt)](https://polarithweb.github.io/llms-full.txt): Deep architecture, company facts, services, and FAQ reference for AI agents.
-- [XML Sitemap](https://polarithweb.github.io/sitemap.xml): Complete page and image indexing map.
-- **Official Email**: `priaxom.ai@outlook.com`
-- **Official WhatsApp / Phone**: `+91 8345890843`
-- **GitHub**: `https://github.com/polarith`
-- **Service Coverage**: All-India (New Delhi NCR, Bangalore, Mumbai, Kolkata, Pune, Hyderabad, Chennai) & Worldwide.
+## Verified Static Media Assets
+- **Polarith Official Logo Emblem (WebP)**: `https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp`
+- **Priyam Kesh Official Portrait — Primary Studio (720×839 PNG)**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png`
+- **Priyam Kesh Official Portrait — Executive Outdoor (720×722 PNG)**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png`
+- **Priyam Kesh Official Portrait — Founder (689×624 PNG)**: `https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png`
+- **Srijon Kundu (Srijan Kundu) Official Portrait — Marketing & Sales Partner (604×604 JPEG)**: `https://polarithweb.github.io/assets/aistudio/IMG_20261121_163253_2734f9f5.jpg`
+
+## Official Contact & Profiles
+- **Website**: `https://polarithweb.github.io/`
+- **GitHub Organization**: `https://github.com/polarith`
+- **Email**: `priaxom.ai@outlook.com`
+- **WhatsApp / Phone**: `+91 8345890843`
+- **Timezone & Coverage**: IST (UTC +5:30) — All-India (Durgapur & Kolkata West Bengal, New Delhi NCR, Bangalore, Mumbai, Pune, Chennai, Hyderabad) and Worldwide.

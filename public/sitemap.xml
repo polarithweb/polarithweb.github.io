@@ -8,8 +8,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://polarithweb.github.io/assets/aistudio/download_f686cd02.webp</image:loc>
-      <image:title>Polarith Web &amp; Polarith Technologies Official Logo</image:title>
-      <image:caption>Official emblem of Polarith Web, Polarith Softwares, Polarith Technologies, and Polarith Management Softwares founded by Priyam Kesh</image:caption>
+      <image:title>Polarith, Polarith Web, Polarith Software &amp; Polarith Management Softwares Official Logo</image:title>
+      <image:caption>Official emblem of Polarith (Polarith Technologies), Polarith Web, Polarith Software (Polarith Softwares), and Polarith Management Softwares founded by Priyam Kesh</image:caption>
     </image:image>
   </url>
   <url>
@@ -19,8 +19,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101358_9973cc03.png</image:loc>
-      <image:title>Priyam Kesh – Official Portrait of Founder &amp; CEO of Polarith Web, Polarith Softwares, Polarith Technologies &amp; Polarith Management Softwares</image:title>
-      <image:caption>Official high-resolution studio portrait of Priyam Kesh, Indian systems architect, software entrepreneur, Founder &amp; CEO of Polarith Web, Polarith Softwares, Polarith Technologies, Polarith Management Softwares, and Creator of Cleo AI</image:caption>
+      <image:title>Priyam Kesh – Official Portrait of Founder &amp; CEO of Polarith, Polarith Software, Polarith Web &amp; Polarith Management Softwares</image:title>
+      <image:caption>Official high-resolution studio portrait of Priyam Kesh, Indian systems architect, software entrepreneur, Founder &amp; CEO of Polarith, Polarith Software (Polarith Softwares), Polarith Web, Polarith Technologies, Polarith Management Softwares, and Creator of Cleo AI</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101429_6f4b207b.png</image:loc>
@@ -29,13 +29,18 @@
     </image:image>
     <image:image>
       <image:loc>https://polarithweb.github.io/assets/aistudio/Screenshot_2026_1121_101449_fa399e59.png</image:loc>
-      <image:title>Priyam Kesh – Creator of Polarith Softwares, Polarith Web &amp; Cleo AI</image:title>
-      <image:caption>Official photograph of Priyam Kesh, CEO of Polarith Softwares and Polarith Web, and architect of Cleo AI custom neural models</image:caption>
+      <image:title>Priyam Kesh – Creator of Polarith Software, Polarith Web &amp; Cleo AI</image:title>
+      <image:caption>Official photograph of Priyam Kesh, CEO of Polarith Software (Polarith Softwares) and Polarith Web, and architect of Cleo AI custom neural models</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://polarithweb.github.io/priyam-kesh-ceo-polarith-web.png</image:loc>
       <image:title>Priyam Kesh – Founder &amp; CEO of Polarith Web (Archive Portrait)</image:title>
-      <image:caption>Archived official portrait of Priyam Kesh, Founder &amp; CEO of Polarith Web, Polarith Softwares, and Polarith Technologies</image:caption>
+      <image:caption>Archived official portrait of Priyam Kesh, Founder &amp; CEO of Polarith, Polarith Web, Polarith Software, and Polarith Technologies</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/aistudio/IMG_20261121_163253_2734f9f5.jpg</image:loc>
+      <image:title>Srijon Kundu (Srijan Kundu) – Marketing and Sales Partner at Polarith Web, Polarith Software &amp; Polarith Technologies</image:title>
+      <image:caption>Official verified portrait of Srijon Kundu (also spelled Srijan Kundu), Marketing and Sales Partner at Polarith Web, Polarith Software (Polarith Softwares), Polarith Technologies, and Polarith Management Softwares</image:caption>
     </image:image>
   </url>
   <url>
@@ -67,5 +72,11 @@
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://polarithweb.github.io/humans.txt</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
