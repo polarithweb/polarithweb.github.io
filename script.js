@@ -45,12 +45,18 @@ function handleRouting() {
 
 window.addEventListener('hashchange', handleRouting);
 
-document.addEventListener("DOMContentLoaded", () => {
+function initMainApp() {
   handleRouting();
   setupInteractions();
   subscribeToProjects();
   setupAdmin();
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initMainApp);
+} else {
+  initMainApp();
+}
 
 // Deep telemetry analytics click logger
 window.trackClick = async function(buttonId, buttonText) {
@@ -1592,7 +1598,8 @@ function setupInteractions() {
   const menuBtn = document.getElementById("menu-btn");
   const overlay = document.getElementById("nav-overlay");
   
-  if (menuBtn && overlay) {
+  if (menuBtn && overlay && menuBtn.dataset.menuBound !== "true") {
+    menuBtn.dataset.menuBound = "true";
     menuBtn.addEventListener("click", () => {
       menuBtn.classList.toggle("active");
       overlay.classList.toggle("active");

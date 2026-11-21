@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="importmap">
+  {
+    "imports": {
+      "firebase/app": "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js",
+      "firebase/firestore": "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js"
+    }
+  }
+  </script>
   
   <!-- DNS Prefetching and Preconnect for Ultra-Responsive Load Times -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -462,7 +470,48 @@ window.toggleFaqFallback = function(element) {
     if(icon) icon.style.transform = 'rotate(45deg)';
   }
 };
-if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;</script>
+if(!window.toggleFaq) window.toggleFaq = window.toggleFaqFallback;
+
+// Immediate fallback for hamburger menu so navigation works before or without module scripts
+function bindHamburgerMenuFallback() {
+  const menuBtn = document.getElementById("menu-btn");
+  const overlay = document.getElementById("nav-overlay");
+  if (!menuBtn || !overlay || menuBtn.dataset.menuBound === "true") return;
+  menuBtn.dataset.menuBound = "true";
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+  const menuCloseBtn = document.getElementById("menu-close-btn");
+  if (menuCloseBtn) {
+    menuCloseBtn.addEventListener("click", () => {
+      menuBtn.classList.remove("active");
+      overlay.classList.remove("active");
+    });
+  }
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      menuBtn.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+  });
+  overlay.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("active");
+      overlay.classList.remove("active");
+      const modalId = link.getAttribute("data-modal");
+      if (modalId && window.openModal) {
+        window.openModal(modalId);
+      }
+    });
+  });
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bindHamburgerMenuFallback);
+} else {
+  bindHamburgerMenuFallback();
+}
+</script>
 </head>
 <body class="is-loading">
 

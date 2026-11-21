@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="importmap">
+  {
+    "imports": {
+      "firebase/app": "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js",
+      "firebase/firestore": "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js"
+    }
+  }
+  </script>
   
   <!-- DNS Prefetching and Preconnect for Ultra-Responsive Load Times -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -188,6 +196,14 @@
   <link rel="stylesheet" href="./src/index.css" />
   
   <style>
+    /* Fallback responsive utility classes if Tailwind stylesheet is not compiled */
+    .hidden { display: none; }
+    .inline { display: inline; }
+    @media (min-width: 640px) {
+      .sm\:inline { display: inline; }
+      .sm\:hidden { display: none; }
+    }
+
     /* Premium Pitch-Black Theme Variables */
     :root {
       --bg-core: #050505;

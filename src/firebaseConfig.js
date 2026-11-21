@@ -1,6 +1,13 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, setDoc, onSnapshot, serverTimestamp, getDocFromServer } from 'firebase/firestore';
-import firebaseConfig from '../firebase-applet-config.json';
+
+// Load Firebase config universally (works in Vite dev/build AND raw browser ES modules on GitHub Pages)
+const configUrl = new URL('../firebase-applet-config.json', import.meta.url);
+const configResponse = await fetch(configUrl);
+if (!configResponse.ok) {
+  throw new Error(`Failed to load Firebase configuration (${configResponse.status})`);
+}
+const firebaseConfig = await configResponse.json();
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

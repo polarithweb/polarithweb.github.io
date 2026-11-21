@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Build App
-        run: npm run build
+        run: npm run build && touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

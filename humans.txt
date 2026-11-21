@@ -1,0 +1,14 @@
+/* TEAM */
+Founder & CEO: Priyam Kesh
+Role: Chief Executive Officer, Founder, Lead Systems Architect
+Organizations: Polarith Technologies, Polarith Web, Polarith Softwares, Polarith Management Softwares, Polarith AI Lab (Cleo AI)
+Contact: priaxom.ai@outlook.com
+Website: https://polarithweb.github.io/
+CEO Profile: https://polarithweb.github.io/priyam-kesh.html
+From: India
+
+/* SITE */
+Last update: 2026/11/21
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, ES2022, Schema.org JSON-LD, OpenGraph, llms.txt
