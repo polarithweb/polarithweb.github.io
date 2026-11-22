@@ -10,7 +10,6 @@ const PAGES = [
   'priyam-kesh.html',
   'ai-lab.html',
   'game-development.html',
-  'blogs.html',
 ];
 
 const REQUIRED_BOTS = [
@@ -50,6 +49,10 @@ const MANAGEMENT_IMAGES = [
   'polarith-nursing-home-management-software.jpg',
   'polarith-smart-society-apartment-software.jpg',
   'polarith-encrypted-database-servers.jpg',
+  'polarith-game-rpg-adventure.jpg',
+  'polarith-game-action-simulation.jpg',
+  'polarith-game-casual-2d.jpg',
+  'polarith-ai-lab-cleo.jpg',
 ];
 
 const MIRRORED_FILES = [
@@ -83,7 +86,7 @@ function sha256(filePath) {
 function runChecks() {
   let passed = 0;
 
-  // 1. Validate unified JSON-LD @graph, semantic <main>, and zero raw markdown in all 6 pages
+  // 1. Validate unified JSON-LD @graph, semantic <main>, and zero raw markdown in all 5 pages
   for (const page of PAGES) {
     const html = fs.readFileSync(path.join(ROOT, page), 'utf8');
     const scripts = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
@@ -157,6 +160,17 @@ function runChecks() {
       assert.ok(!html.includes('window.open(') && !html.includes('window.alert('), 'management-softwares.html: avoid window.open/window.alert');
     }
 
+    if (page === 'ai-lab.html') {
+      for (const token of ['Cleo AI', 'Kodama', 'Gemini 3.8 Flash', 'Claude Opus 4', 'wa.me/918345890843', 'polarith-ai-lab-cleo.jpg']) {
+        assert.ok(html.includes(token), `ai-lab.html: missing required Cleo AI / Kodama content "${token}"`);
+      }
+      const faqNode = json['@graph'].find((n) => n && n['@type'] === 'FAQPage');
+      assert.ok(faqNode && Array.isArray(faqNode.mainEntity) && faqNode.mainEntity.length >= 2, 'ai-lab.html: expected >= 2 FAQPage items');
+      for (const entry of faqNode.mainEntity) {
+        assert.ok(html.includes(entry.name), `ai-lab.html: visible HTML missing FAQ question "${entry.name}"`);
+      }
+    }
+
     passed++;
   }
 
@@ -189,12 +203,12 @@ function runChecks() {
     'https://polarithweb.github.io/priyam-kesh.html',
     'https://polarithweb.github.io/ai-lab.html',
     'https://polarithweb.github.io/game-development.html',
-    'https://polarithweb.github.io/blogs.html',
     'https://polarithweb.github.io/llms.txt',
     'https://polarithweb.github.io/llms-full.txt',
   ]) {
     assert.ok(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: missing <loc>${url}</loc>`);
   }
+  assert.ok(!sitemap.includes('blogs.html'), 'sitemap.xml: blogs.html should be completely removed');
   passed++;
 
   // 5. Verify public/ and repo-root mirror parity (plus dist/ if built)
@@ -237,6 +251,41 @@ function runChecks() {
   assert.ok(icoBuf.readUInt16LE(4) >= 3, 'public/favicon.ico: expected at least 3 embedded icon sizes (16, 32, 48)');
   const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'public/site.webmanifest'), 'utf8'));
   assert.ok(Array.isArray(manifest.icons) && manifest.icons.length >= 4, 'public/site.webmanifest: missing icons array');
+  passed++;
+
+  // 8. Verify Firebase, Firestore, Blogs, and placehold.co are completely removed across the entire codebase
+  const REMOVED_FILES = [
+    'blogs.html',
+    'blogs.js',
+    'src/firebaseConfig.js',
+    'firebase-applet-config.json',
+    'firebase-blueprint.json',
+    'firestore.rules',
+    'security_spec.md',
+    'public/assets/images/polarith-blog-cover.jpg',
+    'assets/images/polarith-blog-cover.jpg',
+  ];
+  for (const removed of REMOVED_FILES) {
+    assert.ok(!fs.existsSync(path.join(ROOT, removed)), `Removed file still exists: ${removed}`);
+  }
+
+  const FILES_TO_AUDIT = [
+    ...PAGES,
+    'script.js',
+    'src/site-assets.js',
+    'package.json',
+    'vite.config.ts',
+    'eslint.config.js',
+    'public/sitemap.xml',
+    'public/llms.txt',
+    'public/llms-full.txt',
+  ];
+  for (const relPath of FILES_TO_AUDIT) {
+    const content = fs.readFileSync(path.join(ROOT, relPath), 'utf8');
+    assert.ok(!/firebase|firestore/i.test(content), `${relPath}: leftover Firebase/Firestore reference found`);
+    assert.ok(!/blogs\.html|blogs\.js/i.test(content), `${relPath}: leftover Blogs reference found`);
+    assert.ok(!/placehold\.co/i.test(content), `${relPath}: external placehold.co placeholder still present`);
+  }
   passed++;
 
   console.log(`GEO verification passed (${passed} test groups, 0 failures).`);

@@ -21,7 +21,6 @@ export default defineConfig(() => {
           'game-development': path.resolve(__dirname, 'game-development.html'),
           'priyam-kesh': path.resolve(__dirname, 'priyam-kesh.html'),
           'ai-lab': path.resolve(__dirname, 'ai-lab.html'),
-          'blogs': path.resolve(__dirname, 'blogs.html'),
         },
       },
     },

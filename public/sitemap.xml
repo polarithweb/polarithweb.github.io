@@ -79,18 +79,32 @@
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/images/polarith-ai-lab-cleo.jpg</image:loc>
+      <image:title>Cleo AI &amp; Flagship Model Kodama – Polarith AI Lab by Priyam Kesh</image:title>
+      <image:caption>Cleo AI cognitive architecture and flagship coding model Kodama capable of head-to-head coding competition with Gemini 3.8 Flash and Claude Opus 4 — contact Polarith on WhatsApp +91 8345890843 for access</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://polarithweb.github.io/game-development.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://polarithweb.github.io/blogs.html</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/images/polarith-game-rpg-adventure.jpg</image:loc>
+      <image:title>Polarith Game Studio – RPG &amp; Adventure Game Engineering</image:title>
+      <image:caption>Custom RPG and Adventure game worlds engineered by Polarith Game Studio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/images/polarith-game-action-simulation.jpg</image:loc>
+      <image:title>Polarith Game Studio – Action &amp; Simulation Game Engineering</image:title>
+      <image:caption>High-frame-rate Action and Simulation physics games engineered by Polarith Game Studio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://polarithweb.github.io/assets/images/polarith-game-casual-2d.jpg</image:loc>
+      <image:title>Polarith Game Studio – Casual &amp; 2D HTML5 WebGL Games</image:title>
+      <image:caption>Instant-load Casual and 2D WebGL games engineered by Polarith Game Studio</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://polarithweb.github.io/llms.txt</loc>

@@ -3,19 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="importmap">
-  {
-    "imports": {
-      "firebase/app": "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js",
-      "firebase/firestore": "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js"
-    }
-  }
-  </script>
-  
   <!-- DNS Prefetching and Preconnect for Ultra-Responsive Load Times -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-  <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   
@@ -190,9 +180,9 @@
             "@type": "Organization",
             "@id": "https://polarithweb.github.io/ai-lab.html#division",
             "name": "Polarith AI Lab",
-            "alternateName": ["Polarith AI", "Cleo AI Lab"],
+            "alternateName": ["Polarith AI", "Cleo AI Lab", "Kodama AI"],
             "url": "https://polarithweb.github.io/ai-lab.html",
-            "description": "Generative AI, Cleo AI cognitive engine, custom LLM fine-tuning, RAG pipelines, and machine learning research division of Polarith.",
+            "description": "Generative AI, Cleo AI platform, Kodama flagship coding model (head-to-head with Gemini 3.8 Flash and Claude Opus 4), and custom machine learning research division of Polarith.",
             "parentOrganization": { "@id": "https://polarithweb.github.io/#organization" },
             "founder": { "@id": "https://polarithweb.github.io/priyam-kesh.html#person" }
           },
@@ -263,9 +253,9 @@
           "Custom Web Development",
           "Native Android & iOS App Development",
           "Custom Software Development",
-          "Cloud SQL & Firestore Database Architecture",
+          "Encrypted Local & Cloud Database Architecture",
           "Google PageSpeed & Core Web Vitals Optimization",
-          "Generative AI, Custom LLMs & RAG Pipelines",
+          "Generative AI, Cleo AI & Kodama Coding Model",
           "2D/3D Unity, Unreal & WebGL Game Development"
         ],
         "sameAs": [
@@ -318,8 +308,8 @@
           "Custom ERP & CRM Management Software",
           "Android & iOS App Development",
           "C++, Python, Rust, TypeScript, JavaScript",
-          "React, Vite, Node.js, Cloud SQL, Firebase Firestore",
-          "Generative AI, Custom LLMs & RAG Pipelines",
+          "React, Vite, Node.js, Encrypted Local & Cloud SQL Databases",
+          "Generative AI, Cleo AI & Kodama Flagship Coding Model",
           "Unity, Unreal Engine & WebGL Game Engineering"
         ],
         "sameAs": [
@@ -361,7 +351,7 @@
         "url": "https://polarithweb.github.io/#software-company",
         "operatingSystem": "Android, iOS, Windows, macOS, Linux, Web",
         "applicationCategory": "DeveloperApplication, MobileApplication",
-        "description": "Bespoke software engineering and native Android & iOS mobile applications (starting from ₹25,000) built from scratch by Polarith Software with Firebase Auth, Cloud Firestore, offline caching, push notifications, and Play Store / App Store publishing.",
+        "description": "Bespoke software engineering and native Android & iOS mobile applications (starting from ₹25,000) built from scratch by Polarith Software with secure encrypted backends, offline caching, push notifications, and Play Store / App Store publishing.",
         "author": { "@id": "https://polarithweb.github.io/priyam-kesh.html#person" },
         "publisher": { "@id": "https://polarithweb.github.io/#organization" },
         "offers": {
@@ -456,7 +446,7 @@
             "name": "What is Polarith Software?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Polarith Software (also known as Polarith Softwares) is the bespoke software and mobile application division of Polarith founded by Priyam Kesh. It builds custom native Android and iOS apps (starting from ₹25,000), cross-platform desktop software, Firebase Auth/Firestore backends, and scalable enterprise utilities completely from scratch."
+              "text": "Polarith Software (also known as Polarith Softwares) is the bespoke software and mobile application division of Polarith founded by Priyam Kesh. It builds custom native Android and iOS apps (starting from ₹25,000), cross-platform desktop software, encrypted local and cloud backends, and scalable enterprise utilities completely from scratch."
             }
           },
           {
@@ -562,15 +552,8 @@
             "@type": "SiteNavigationElement",
             "position": 4,
             "name": "Polarith AI Lab",
-            "description": "Cleo AI, Generative AI & Machine Learning solutions by Polarith Technologies.",
+            "description": "Cleo AI, Kodama flagship coding model & Machine Learning solutions by Polarith Technologies.",
             "url": "https://polarithweb.github.io/ai-lab.html"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 5,
-            "name": "Blogs",
-            "description": "Engineering insights on Polarith Software, Polarith Web, Polarith Management Softwares & AI.",
-            "url": "https://polarithweb.github.io/blogs.html"
           }
         ]
       }
@@ -782,11 +765,7 @@ if (document.readyState === "loading") {
           </a>
           <a href="./ai-lab.html" class="btn-ai-lab reveal-drop drop-delay-4" style="background: linear-gradient(135deg, #0284c7, #0ea5e9); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(0.5px);"><path d="M10 2v7.5M14 2v7.5M8.5 13h7M16 21H8a2 2 0 0 1-1.82-2.82L10 9.5h4l3.82 8.68A2 2 0 0 1 16 21Z"/></svg>
-            Polarith AI Lab
-          </a>
-          <a href="./blogs.html" class="btn-blogs reveal-drop drop-delay-5" style="background: linear-gradient(135deg, #ea580c, #f97316); color: #ffffff; border: 2px solid #000000; padding: 14px 24px; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; min-height: 48px; transition: all 0.2s ease-in-out; box-shadow: 4px 4px 0px var(--border-light); border-radius: 4px;">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translateY(0.5px);"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
-            Blogs
+            Polarith AI Lab (Cleo AI)
           </a>
         </div>
       </div>
@@ -840,7 +819,7 @@ if (document.readyState === "loading") {
             <div class="project-price">Starting from ₹25,000</div>
             <ul class="project-features">
               <li>✓ Native performance multi-platform apps</li>
-              <li>✓ Firebase Auth and Firestore integration</li>
+              <li>✓ Secure encrypted cloud &amp; local backends</li>
               <li>✓ Push notification systems setup</li>
               <li>✓ Premium Play Store & App Store support</li>
             </ul>
@@ -950,7 +929,7 @@ if (document.readyState === "loading") {
               Accelerate user engagement with <strong>Polarith Software</strong>, engineering high-performance native and cross-platform Android &amp; iOS mobile applications from scratch.
             </p>
             <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1rem;">
-              As a dedicated <strong>app developer</strong> in India, Polarith builds native-speed mobile applications backed by Firebase Auth, Cloud Firestore secure backends, responsive offline caching, and instant push notifications, along with full Google Play Store and Apple App Store publishing support.
+              As a dedicated <strong>app developer</strong> in India, Polarith builds native-speed mobile applications backed by encrypted local and cloud secure backends, responsive offline caching, and instant push notifications, along with full Google Play Store and Apple App Store publishing support.
             </p>
             <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
               By maintaining a direct, zero-bloat codebase, our applications run smoothly even on entry-level devices, driving strong user retention and reviews.
@@ -1006,7 +985,7 @@ if (document.readyState === "loading") {
           </div>
           <div class="faq-answer">
             <p>
-              <strong>Polarith Software</strong> (also known as <strong>Polarith Softwares</strong>) is the bespoke software and mobile application division of Polarith founded by Priyam Kesh. It builds custom native Android and iOS apps (starting from ₹25,000), cross-platform desktop software, Firebase Auth/Firestore backends, and scalable enterprise utilities completely from scratch.
+              <strong>Polarith Software</strong> (also known as <strong>Polarith Softwares</strong>) is the bespoke software and mobile application division of Polarith founded by Priyam Kesh. It builds custom native Android and iOS apps (starting from ₹25,000), cross-platform desktop software, encrypted local and cloud backends, and scalable enterprise utilities completely from scratch.
             </p>
           </div>
         </div>
@@ -1234,7 +1213,6 @@ if (document.readyState === "loading") {
       <div class="footer-bottom">
         <span>© 2026 Polarith Web. All rights reserved.</span>
         <div style="display: flex; gap: 1rem;">
-          <a href="#admin">Admin</a>
           <a href="#" onclick="openModal('modal-about'); return false;">About Us</a>
           <a href="#" onclick="openModal('modal-contact'); return false;">Developer Info</a>
         </div>
@@ -1242,300 +1220,6 @@ if (document.readyState === "loading") {
     </div>
   </footer>
   </main> <!-- main-content -->
-
-  <!-- Admin Content -->
-  <div id="admin-content" style="display: none; padding-top: 160px; padding-bottom: 80px;">
-    <div class="container">
-      <h2 class="section-title">Admin Dashboard</h2>
-      
-      <div id="admin-auth" style="text-align: center; margin: 4rem 0;">
-        <p style="margin-bottom: 2rem;">Admin Panel requires secure authentication. Please enter your administrator password.</p>
-        <form id="admin-password-form" style="max-width: 320px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px;">
-          <input type="password" id="admin-password-input" class="form-input" placeholder="Enter Admin Password" required />
-          <button type="submit" id="admin-login-btn" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
-            Login to Dashboard
-          </button>
-        </form>
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Only authorized personnel can access the database catalog.</p>
-      </div>
-
-      <div id="admin-panel" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-          <h3 style="margin: 0;">Admin Command Center</h3>
-          <button id="admin-logout-btn" class="btn-secondary" style="margin: 0;">Logout</button>
-        </div>
-
-        <!-- Neo-Brutalist Tabs Navigation -->
-        <div class="admin-tabs" style="display: flex; gap: 10px; margin-bottom: 2.5rem; border-bottom: 2px solid var(--border-dark); padding-bottom: 10px; flex-wrap: wrap;">
-          <button class="admin-tab-btn active" data-tab="projects" style="background: var(--bg-surface); border: 2px solid var(--border-dark); padding: 10px 20px; font-weight: 700; font-size: 0.95rem; cursor: pointer; box-shadow: 3px 3px 0px var(--border-dark); transition: all 0.15s ease-in-out; font-family: var(--font-sans);">📁 Projects</button>
-          <button class="admin-tab-btn" data-tab="assets" style="background: white; border: 2px solid var(--border-dark); padding: 10px 20px; font-weight: 700; font-size: 0.95rem; cursor: pointer; box-shadow: 3px 3px 0px var(--border-dark); transition: all 0.15s ease-in-out; font-family: var(--font-sans);">🖼️ Assets &amp; Images</button>
-          <button class="admin-tab-btn" data-tab="telemetry" style="background: white; border: 2px solid var(--border-dark); padding: 10px 20px; font-weight: 700; font-size: 0.95rem; cursor: pointer; box-shadow: 3px 3px 0px var(--border-dark); transition: all 0.15s ease-in-out; font-family: var(--font-sans);">📊 Telemetry &amp; Inquiries</button>
-          <button class="admin-tab-btn" data-tab="ailab" style="background: white; border: 2px solid var(--border-dark); padding: 10px 20px; font-weight: 700; font-size: 0.95rem; cursor: pointer; box-shadow: 3px 3px 0px var(--border-dark); transition: all 0.15s ease-in-out; font-family: var(--font-sans);">🧪 AI Lab</button>
-          <button class="admin-tab-btn" data-tab="blog" style="background: white; border: 2px solid var(--border-dark); padding: 10px 20px; font-weight: 700; font-size: 0.95rem; cursor: pointer; box-shadow: 3px 3px 0px var(--border-dark); transition: all 0.15s ease-in-out; font-family: var(--font-sans);">✍️ Blog Posts</button>
-        </div>
-
-        <!-- TAB PANEL 1: PROJECTS -->
-        <div class="admin-tab-panel" id="panel-projects">
-          <form id="admin-add-form" style="background: white; padding: 2rem; border: 2px solid var(--border-light); margin-bottom: 3rem;">
-            <h4 id="form-heading" style="margin-bottom: 1rem;">Add New Project</h4>
-            <div class="form-group"><input type="text" id="add-title" class="form-control" placeholder="Project Title" required /></div>
-            <div class="form-group"><input type="text" id="add-price" class="form-control" placeholder="Price (e.g. ₹20,000)" required /></div>
-            <div class="form-group"><input type="text" id="add-tag" class="form-control" placeholder="Tag (e.g. Bestseller)" /></div>
-            <div class="form-group"><input type="text" id="add-features" class="form-control" placeholder="Features (comma separated)" /></div>
-            
-            <div class="form-group" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; background: #f8fafc; padding: 0.75rem 1rem; border: 1px solid var(--border-light);">
-              <input type="checkbox" id="add-dark-mode" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--brand-primary);" />
-              <label for="add-dark-mode" style="font-size: 0.9rem; font-weight: 600; color: var(--text-dark); cursor: pointer; user-select: none;">
-                Card Dark Mode (fully visible background, no inner box, white texts)
-              </label>
-            </div>
-
-            <div class="form-group" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; background: var(--bg-main); padding: 1rem; border: 1px dashed var(--border-light);">
-              <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-dark);">Card Background Image</label>
-              <div style="display: flex; gap: 1rem; align-items: center;">
-                <input type="file" id="add-bg-file" class="form-control" accept="image/*" style="padding: 6px; font-size: 0.85rem;" />
-                <button type="button" id="clear-bg-btn" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; display: none; min-height: unset;">Clear image</button>
-              </div>
-              <div style="display: flex; gap: 1rem; align-items: center; margin-top: 0.25rem;">
-                <span style="font-size: 0.8rem; color: var(--text-muted); flex-shrink: 0;">Or paste image URL:</span>
-                <input type="text" id="add-bg-url" class="form-control" placeholder="https://example.com/pattern.png" style="font-size: 0.85rem; padding: 6px;" />
-              </div>
-              <div id="bg-preview-container" style="display: none; margin-top: 0.5rem; align-items: center; gap: 10px;">
-                <img id="bg-preview-img" style="width: 80px; height: 50px; object-fit: cover; border: 1px solid var(--border-light);" />
-                <span style="font-size: 0.8rem; color: var(--brand-primary); font-weight: 700;">Active Background</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 1rem;">
-              <button type="submit" id="submit-btn" class="btn-primary">Add Project</button>
-              <button type="button" id="cancel-edit-btn" class="btn-secondary" style="display: none;">Cancel</button>
-            </div>
-          </form>
-
-          <h4>Current Projects</h4>
-          <div id="admin-projects-list" style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
-             <!-- admin project items -->
-          </div>
-        </div>
-
-        <!-- TAB PANEL 2: ASSETS & IMAGES -->
-        <div class="admin-tab-panel" id="panel-assets" style="display: none;">
-          <!-- Manage Website Assets & Images Form -->
-          <form id="admin-images-form" style="background: white; padding: 2rem; border: 2px solid var(--border-light); margin-bottom: 3rem;">
-            <h4 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
-              🖼️ Manage Website Assets &amp; Images
-            </h4>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.5;">
-              Upload files or paste public image URLs to customize your branding, graphics, and team photos in real time. Changes sync automatically across all pages.
-            </p>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-
-              <!-- RPG Image -->
-              <div style="background: var(--bg-main); padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">1. RPG Game Cover (img1.png)</span>
-                <input type="file" id="img-img1-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-img1-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-img1-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-img1-img" src="./img1.png" style="height: 36px; max-width: 120px; object-fit: cover; border: 1px solid var(--border-light);" onerror="this.src='https://placehold.co/120x80/0f172a/ffffff?text=RPG';" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="img1" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
-              <!-- Action Image -->
-              <div style="background: var(--bg-main); padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">2. Action Game Cover (img2.png)</span>
-                <input type="file" id="img-img2-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-img2-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-img2-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-img2-img" src="./img2.png" style="height: 36px; max-width: 120px; object-fit: cover; border: 1px solid var(--border-light);" onerror="this.src='https://placehold.co/120x80/0f172a/ffffff?text=Action';" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="img2" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
-              <!-- Casual Image -->
-              <div style="background: var(--bg-main); padding: 1.25rem; border: 1px solid var(--border-light); display: flex; flex-direction: column; gap: 0.75rem;">
-                <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">3. Casual Game Cover (img3.png)</span>
-                <input type="file" id="img-img3-file" accept="image/*" style="font-size: 0.8rem; padding: 4px;" />
-                <input type="text" id="img-img3-url" class="form-control" placeholder="Or paste image URL" style="font-size: 0.85rem; padding: 6px;" />
-                <div id="preview-img3-container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 0.25rem;">
-                  <img id="preview-img3-img" src="./img3.png" style="height: 36px; max-width: 120px; object-fit: cover; border: 1px solid var(--border-light);" onerror="this.src='https://placehold.co/120x80/0f172a/ffffff?text=Casual';" />
-                  <button type="button" class="btn-secondary reset-asset-btn" data-asset="img3" style="padding: 4px 10px; font-size: 0.75rem; min-height: unset; height: auto;">Reset</button>
-                </div>
-              </div>
-
-            </div>
-
-            <div style="display: flex; gap: 1rem; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
-              <button type="submit" id="save-images-btn" class="btn-primary" style="min-width: 180px;">Save All Assets</button>
-              <div id="save-images-status" style="display: none; align-items: center; font-size: 0.85rem; font-weight: 700; color: #16a34a;">
-                Saving assets...
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- TAB PANEL 3: TELEMETRY & INQUIRIES -->
-        <div class="admin-tab-panel" id="panel-telemetry" style="display: none;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-            <div>
-              <h4 style="margin-bottom: 1.25rem; display: flex; align-items: center; gap: 8px;">
-                📬 Recent Inquiries <span id="admin-inquiries-count" style="font-size: 0.8rem; background: var(--brand-primary); color: white; padding: 2px 8px; border-radius: 999px;">0</span>
-              </h4>
-              <div id="admin-inquiries-list" style="display: flex; flex-direction: column; gap: 1rem; max-height: 500px; overflow-y: auto; padding-right: 0.25rem;">
-                <div style="font-size: 0.85rem; padding: 1.5rem; background: var(--bg-main); border: 1px dashed var(--border-light); text-align: center; color: var(--text-muted);">
-                  Sign in as Admin to sync customer inquiries.
-                </div>
-              </div>
-            </div>
-            <div>
-              <h4 style="margin-bottom: 1.25rem; display: flex; align-items: center; gap: 8px;">
-                📊 Telemetry Clicks <span id="admin-clicks-count" style="font-size: 0.8rem; background: var(--brand-primary); color: white; padding: 2px 8px; border-radius: 999px;">0</span>
-              </h4>
-              <div id="admin-clicks-list" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 500px; overflow-y: auto; padding-right: 0.25rem;">
-                <div style="font-size: 0.85rem; padding: 1.5rem; background: var(--bg-main); border: 1px dashed var(--border-light); text-align: center; color: var(--text-muted);">
-                  Sign in as Admin to sync lead telemetry activity.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TAB PANEL 4: AI LAB -->
-        <div class="admin-tab-panel" id="panel-ailab" style="display: none;">
-          <!-- Manage Polarith AI Lab Projects Form -->
-          <form id="admin-ai-form" style="background: var(--bg-surface); padding: 2rem; border: 2px solid var(--border-light); margin-bottom: 3rem;">
-            <h4 id="ai-form-heading" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
-              🧪 Manage Polarith AI Lab Projects
-            </h4>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.5;">
-              Add, update, or remove research projects published inside your glassmorphic Polarith AI Lab website.
-            </p>
-            
-            <div class="form-group">
-              <label for="ai-add-title" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">1. Project Title</label>
-              <input type="text" id="ai-add-title" class="form-control" placeholder="e.g. Polarith DeepThink Core" required />
-            </div>
-            
-            <div class="form-group">
-              <label for="ai-add-desc" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">2. Description</label>
-              <textarea id="ai-add-desc" class="form-control" placeholder="Detail the AI technology and custom features..." required style="min-height: 100px; font-family: var(--font-sans);"></textarea>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-              <div class="form-group">
-                <label for="ai-add-link-url" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">3. Link URL</label>
-                <input type="text" id="ai-add-link-url" class="form-control" placeholder="https://example.com/demo" />
-              </div>
-              <div class="form-group">
-                <label for="ai-add-link-title" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">4. Link Custom Title</label>
-                <input type="text" id="ai-add-link-title" class="form-control" placeholder="e.g. Try AI Tool" />
-              </div>
-            </div>
-
-            <div class="form-group" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; background: var(--bg-main); padding: 1rem; border: 1px dashed var(--border-light);">
-              <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-dark);">5. Project Image Artwork</label>
-              <div style="display: flex; gap: 1rem; align-items: center;">
-                <input type="file" id="ai-add-img-file" class="form-control" accept="image/*" style="padding: 6px; font-size: 0.85rem;" />
-                <button type="button" id="ai-clear-img-btn" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; display: none; min-height: unset;">Clear image</button>
-              </div>
-              <div style="display: flex; gap: 1rem; align-items: center; margin-top: 0.25rem;">
-                <span style="font-size: 0.8rem; color: var(--text-muted); flex-shrink: 0;">Or paste public URL:</span>
-                <input type="text" id="ai-add-img-url" class="form-control" placeholder="https://example.com/artwork.png" style="font-size: 0.85rem; padding: 6px;" />
-              </div>
-              <div id="ai-img-preview-container" style="display: none; margin-top: 0.5rem; align-items: center; gap: 10px;">
-                <img id="ai-img-preview-img" style="width: 80px; height: 50px; object-fit: cover; border: 1px solid var(--border-light);" />
-                <span style="font-size: 0.8rem; color: var(--brand-primary); font-weight: 700;">Active Cover Preview</span>
-              </div>
-            </div>
-            
-            <div style="display: flex; gap: 1rem;">
-              <button type="submit" id="ai-submit-btn" class="btn-primary">Add Lab Project</button>
-              <button type="button" id="ai-cancel-edit-btn" class="btn-secondary" style="display: none;">Cancel Edit</button>
-            </div>
-          </form>
-
-          <h4 style="margin-top: 2rem;">Current AI Lab Projects</h4>
-          <div id="admin-ai-projects-list" style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
-             <!-- admin ai project items loaded dynamically -->
-          </div>
-        </div>
-
-        <!-- TAB PANEL 5: BLOG -->
-        <div class="admin-tab-panel" id="panel-blog" style="display: none;">
-          <form id="admin-blog-form" style="background: var(--bg-surface); padding: 2rem; border: 2px solid var(--border-light); margin-bottom: 3rem;">
-            <h4 id="blog-form-heading" style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
-              ✍️ Manage Polarith Blog Posts
-            </h4>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.5;">
-              Create, update, or remove blogs. Date, Title, Cover Image, and full Rich HTML content are supported.
-            </p>
-            
-            <div class="form-group">
-              <label for="blog-add-title" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">1. Blog Title</label>
-              <input type="text" id="blog-add-title" class="form-control" placeholder="e.g. Navigating the Hand-Coded Revolution in 2026" required />
-            </div>
-
-            <div class="form-group">
-              <label for="blog-add-date" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">2. Publish Date</label>
-              <input type="text" id="blog-add-date" class="form-control" placeholder="e.g. July 2, 2026" required />
-            </div>
-
-            <div class="form-group" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; background: var(--bg-main); padding: 1rem; border: 1px dashed var(--border-light);">
-              <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-dark);">3. Cover Image</label>
-              <div style="display: flex; gap: 1rem; align-items: center;">
-                <input type="file" id="blog-add-img-file" class="form-control" accept="image/*" style="padding: 6px; font-size: 0.85rem;" />
-                <button type="button" id="blog-clear-img-btn" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; display: none; min-height: unset;">Clear image</button>
-              </div>
-              <div style="display: flex; gap: 1rem; align-items: center; margin-top: 0.25rem;">
-                <span style="font-size: 0.8rem; color: var(--text-muted); flex-shrink: 0;">Or paste public URL:</span>
-                <input type="text" id="blog-add-img-url" class="form-control" placeholder="https://example.com/cover.png" style="font-size: 0.85rem; padding: 6px;" />
-              </div>
-              <div id="blog-img-preview-container" style="display: none; margin-top: 0.5rem; align-items: center; gap: 10px;">
-                <img id="blog-img-preview-img" style="width: 80px; height: 50px; object-fit: cover; border: 1px solid var(--border-light);" />
-                <span style="font-size: 0.8rem; color: var(--brand-primary); font-weight: 700;">Active Cover Preview</span>
-              </div>
-            </div>
-
-            <!-- Full Rich Text Editor Layout -->
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="blog-add-content" style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; display: block; color: var(--text-dark);">4. Blog Content (Full Text HTML Editor)</label>
-              
-              <!-- Formatting Helper toolbar -->
-              <div class="editor-toolbar" style="display: flex; gap: 6px; flex-wrap: wrap; background: #f1f5f9; border: 1px solid var(--border-light); border-bottom: none; padding: 6px; border-top-left-radius: 4px; border-top-right-radius: 4px;">
-                <button type="button" class="editor-tool-btn" data-tag="p" title="Paragraph" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">Paragraph &lt;p&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="h3" title="Heading 3" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">H3 &lt;h3&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="strong" title="Bold" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">Bold &lt;strong&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="em" title="Italic" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">Italic &lt;em&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="img" title="Image Link" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">🖼️ Image Tag &lt;img&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="blockquote" title="Quote" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">Quote &lt;blockquote&gt;</button>
-                <button type="button" class="editor-tool-btn" data-tag="ul" title="List" style="padding: 4px 8px; font-size: 0.8rem; font-weight: bold; background: white; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 3px; font-family: var(--font-sans);">Bullet List &lt;ul&gt;</button>
-              </div>
-
-              <textarea id="blog-add-content" class="form-control" placeholder="Write your full blog HTML content here... Standard paragraph, strong tags, images can go anywhere." required style="min-height: 250px; font-family: var(--font-mono); border-top-left-radius: 0; border-top-right-radius: 0; font-size: 0.9rem; line-height: 1.5;"></textarea>
-            </div>
-
-            <!-- Editor Live Preview -->
-            <div class="form-group" style="margin-bottom: 1.5rem; background: #fafafa; border: 1px solid var(--border-light); padding: 1.25rem;">
-              <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); display: block; margin-bottom: 0.75rem;">Live Editor Preview</span>
-              <div id="blog-live-preview" style="background: var(--bg-surface); border: 1px solid var(--border-light); padding: 1.5rem; min-height: 100px; max-height: 300px; overflow-y: auto; color: var(--text-dark); line-height: 1.6;" class="markdown-body">
-                <em style="color: var(--text-muted); font-size: 0.9rem;">Type inside content box to render HTML preview...</em>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem;">
-              <button type="submit" id="blog-submit-btn" class="btn-primary">Add Blog Post</button>
-              <button type="button" id="blog-cancel-edit-btn" class="btn-secondary" style="display: none;">Cancel Edit</button>
-            </div>
-          </form>
-
-          <h4 style="margin-top: 2rem;">Current Blog Posts</h4>
-          <div id="admin-blogs-list" style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
-             <!-- admin blog items loaded dynamically -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modals -->
   <!-- About Modal -->

@@ -16,9 +16,8 @@
 | **Polarith Web** | Division / Service | Hand-coded custom website development, landing pages, corporate portals, and full-stack web applications | `https://polarithweb.github.io/#website-developer` |
 | **Polarith Software** (alt: **Polarith Softwares**) | Division / SoftwareApplication | Bespoke software engineering, native Android & iOS mobile apps, desktop tools, and scalable cloud backends | `https://polarithweb.github.io/#software-company` |
 | **Polarith Management Softwares** | Division / SoftwareApplication | One-time ownership institutional management software & hardware suites for Schools, Gyms, Nursing Homes, and Smart Society Apartments with zero yearly subscriptions | `https://polarithweb.github.io/management-softwares.html` |
-| **Polarith AI Lab** & **Cleo AI** | Research Division / AI Product | Custom Generative AI, Cleo AI cognitive engine, fine-tuned LLMs, RAG pipelines, semantic search, and ML automation | `https://polarithweb.github.io/ai-lab.html` |
+| **Polarith AI Lab**, **Cleo AI** & **Kodama** | Research Division / AI Product | Cleo AI cognitive engine and flagship model Kodama (head-to-head coding competition with Gemini 3.8 Flash and Claude Opus 4), custom LLMs, RAG pipelines, and ML automation — contact via WhatsApp `+91 8345890843` | `https://polarithweb.github.io/ai-lab.html` |
 | **Polarith Game Studio** | Division / Service | Custom 2D/3D video game development using Unity, Unreal Engine, Phaser, Three.js, Pixi.js, and HTML5 WebGL | `https://polarithweb.github.io/game-development.html` |
-| **Polarith Tech Blogs** | Publication / Blog | Engineering diaries and research publications on custom software, management suites, WebGL, and AI | `https://polarithweb.github.io/blogs.html` |
 
 ---
 
@@ -34,9 +33,9 @@
 - **Technical Stack & Expertise**:
   - **Languages**: C++, Python, Rust, TypeScript, JavaScript, HTML5, CSS3, SQL
   - **Web & Frontend**: React, Vite, semantic HTML5, responsive mobile-first UI, strict 90-degree neo-brutalist UI/UX grids, JSON-LD SEO/GEO schemas
-  - **Mobile & Cloud**: Native Android & iOS app development, Firebase Auth, Cloud Firestore, Cloud SQL database pipelines, real-time multi-agent synchronization, push notifications, offline caching, Play Store & App Store deployment
-  - **Enterprise & Backend**: Custom ERP/CRM architecture, billing & inventory automation, private RESTful business APIs, multi-tenant SaaS dashboards, zero-trust backend security
-  - **Artificial Intelligence**: Cleo AI cognitive engine, custom fine-tuned Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) pipelines, semantic search engines, automated computer vision, intelligent agent workflows
+  - **Mobile & Cloud**: Native Android & iOS app development, encrypted local & cloud database pipelines, Cloud SQL storage, real-time synchronization, push notifications, offline caching, Play Store & App Store deployment
+  - **Enterprise & Backend**: Custom ERP/CRM architecture, billing & inventory automation, private RESTful business APIs, multi-tenant dashboards, zero-trust backend security
+  - **Artificial Intelligence**: Cleo AI cognitive engine and flagship coding model **Kodama** (engineered for head-to-head coding competition with Gemini 3.8 Flash and Claude Opus 4), custom fine-tuned LLMs, RAG pipelines, semantic search, and intelligent agent workflows
   - **Game Engineering**: Unity, Unreal Engine, Three.js, Phaser, Pixi.js, HTML5 Canvas, WebGL physics cores, rigid-body collision mechanics
 - **Research & Academic Interests**: Beyond computer science, Priyam Kesh studies Indian History, South Asian Literature, Comparative Religion, Buddhist Philosophy & Tantra, Hindu Tantra Traditions, Ancient Civilizations, Cultural Studies, and Philosophy & Rational Thought from a secular, analytical, atheistic perspective.
 - **Verified Static Portraits of Priyam Kesh**:
@@ -74,7 +73,7 @@
 - **Tag**: Popular
 - **Deliverables & Capabilities**:
   - Native-performance multi-platform Android and iOS mobile applications
-  - Firebase Authentication and Cloud Firestore secure backend integration
+  - Encrypted local and cloud database backend integration with zero-trust access controls
   - Offline caching and real-time push notification systems
   - End-to-end Google Play Store and Apple App Store publishing and compliance support
   - Zero-bloat codebases engineered to run smoothly even on budget hardware
@@ -102,14 +101,14 @@
 - **4. Smart Society & Apartment Management Suite**: Ad-free branded resident & committee mobile app, automated monthly maintenance billing & audit ledger, main gate visitor QR passes & vehicle logs, guard & domestic help biometric attendance, complaint helpdesk & amenity booking calendar, and complimentary official society portal.
 - **Enterprise Custom Additions**: Also supports custom ERP, CRM lead pipelines, Cloud SQL database pipelines, and private RESTful business APIs.
 
-### D. Polarith AI Lab & Cleo AI — Custom Artificial Intelligence & Machine Learning
+### D. Polarith AI Lab — Cleo AI & Flagship Model Kodama
 - **URL**: `https://polarithweb.github.io/ai-lab.html`
+- **Access & Onboarding**: Contact Polarith directly on **WhatsApp (`+91 8345890843`, `https://wa.me/918345890843`)** to request credentials, private deployment, or developer access to Cleo AI and Kodama.
 - **Deliverables & Capabilities**:
-  - **Cleo AI**: Proprietary cognitive network and LLM orchestration architecture created by Priyam Kesh under Polarith Technologies
-  - Custom fine-tuned Large Language Models (LLMs) and private-data AI copilots
-  - Semantic search engines and Retrieval-Augmented Generation (RAG) pipelines engineered from scratch
-  - High-throughput automated computer vision systems and autonomous AI agent workflows
-  - Strict data isolation, ultra-low latency inference, and zero-trust backend authorization
+  - **Cleo AI**: Proprietary cognitive engine and autonomous software-engineering intelligence platform created by Priyam Kesh under Polarith Technologies. Built for speed, deterministic engineering reasoning, private data isolation, and real-world software production without generic wrapper bloat.
+  - **Kodama (Flagship Coding Model)**: Cleo AI's most powerful model, specifically engineered to deliver **head-to-head competition in coding against Gemini 3.8 Flash and Claude Opus 4**. Handles multi-file system architecture, complex algorithm synthesis, automated debugging, full-stack web/mobile/ERP code generation, and deep repository refactoring with low-latency inference.
+  - Custom fine-tuned Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) pipelines, semantic search, and private enterprise AI copilots.
+  - Strict data isolation, encrypted deployment options, and zero-trust backend authorization.
 
 ### E. Polarith Game Studio — Next-Gen 2D & 3D Game Development
 - **URL**: `https://polarithweb.github.io/game-development.html`
@@ -120,10 +119,6 @@
   2. **Action & Simulation** (*Best for Fast Realism*): High refresh rates, realistic rigid-body physics, fluid mechanics, collision controllers, multiplayer flight sims, racing modules, and kinetic shooters.
   3. **Casual & 2D** (*Best for Viral Reach & Cross-Platform*): Vibrant HTML5/WebGL puzzle games, responsive platformers, and tactile board interfaces with instant load speeds and browser caching.
 - **Frameworks & Engines**: Phaser, Three.js, hand-coded HTML5 Canvas/WebGL physics loops, Pixi.js, Unity, and Unreal Engine.
-
-### F. Polarith Tech Blogs — Engineering Publications
-- **URL**: `https://polarithweb.github.io/blogs.html`
-- **Focus**: Technical research articles, software engineering methodologies, management software architecture guides, WebGL physics breakdowns, and Polarith AI insights synced live from Firestore and searchable by keyword.
 
 ---
 
@@ -146,7 +141,7 @@
 **A:** Priyam Kesh is an Indian systems architect, custom software engineer, and technology entrepreneur who serves as the Founder & CEO of Polarith (Polarith Technologies) and all its divisions — including Polarith Software (Polarith Softwares), Polarith Web, Polarith Management Softwares, Polarith Game Studio, and Polarith AI Lab — and is the creator of the Cleo AI neural engine.
 
 ### Q: What is Polarith Software?
-**A:** Polarith Software (also known as Polarith Softwares) is the bespoke software engineering division of Polarith founded by Priyam Kesh. It hand-codes custom Android and iOS mobile apps (starting from ₹25,000), cross-platform desktop utilities, secure Firestore/Cloud SQL backends, and scalable enterprise software completely from scratch without bloated templates.
+**A:** Polarith Software (also known as Polarith Softwares) is the bespoke software engineering division of Polarith founded by Priyam Kesh. It hand-codes custom Android and iOS mobile apps (starting from ₹25,000), cross-platform desktop utilities, encrypted local and cloud database backends, and scalable enterprise software completely from scratch without bloated templates.
 
 ### Q: What services does Polarith Web offer?
 **A:** Polarith Web is the custom web development studio of Polarith founded by Priyam Kesh. It builds hand-coded enterprise websites (starting from ₹15,000), landing pages, e-commerce stores, and full-stack React/HTML5 web applications engineered for 100/100 Google PageSpeed Insights, mobile-first responsiveness, and structured JSON-LD SEO/GEO visibility.
@@ -175,8 +170,11 @@
 ### Q: How do you optimize a website for Google Search and AI engines?
 **A:** Polarith implements comprehensive on-page, technical, and Generative Engine Optimization (GEO): unified Schema.org JSON-LD Knowledge Graphs, Core Web Vitals speed optimization, semantic HTML5 landmarks, responsive layouts, XML image sitemaps, unrestricted AI crawler policies in `robots.txt`, and structured `llms.txt` / `llms-full.txt` indexing.
 
-### Q: What makes Polarith AI Lab different from generic AI companies?
-**A:** Polarith AI Lab rejects off-the-shelf wrapper templates and builds mathematically precise, lightweight ML algorithms, custom fine-tuned LLMs, semantic search, RAG pipelines, and Cleo AI cognitive workflows from scratch with strict data isolation, low latency, and zero-trust backend security.
+### Q: What is Cleo AI and its flagship model Kodama?
+**A:** Cleo AI is Polarith AI Lab's proprietary cognitive engine created by Priyam Kesh. Its most powerful model, **Kodama**, is engineered to go head-to-head in coding competition against **Gemini 3.8 Flash** and **Claude Opus 4**, delivering deep multi-file software architecture, full-stack synthesis, debugging, and zero-trust data isolation.
+
+### Q: How can I use Cleo AI and Kodama?
+**A:** To request access, private deployment, or API onboarding for Cleo AI and Kodama, contact Polarith directly on **WhatsApp at +91 8345890843** (`https://wa.me/918345890843`).
 
 ### Q: How does Polarith Game Studio's pricing and engine stack work?
 **A:** Custom game development scales from ₹3,999 for lightweight HTML5 minigames and interactive vectors up to ₹4,19,999 for advanced multi-platform 3D releases with custom art and physics. Polarith engineers games using Phaser, Three.js, hand-coded HTML5 Canvas/WebGL, Pixi.js, Unity, and Unreal Engine.
